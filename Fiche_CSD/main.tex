@@ -1,0 +1,114 @@
+\documentclass[30pt,french]{report}
+
+% This is the main framework I use for my LateX documents.
+% main.tex by Alexis GRACIAS
+
+%%%%%%%%%%%%%
+% LIBRARIES %
+%%%%%%%%%%%%%
+
+\usepackage{babel}
+\usepackage{hyperref} % Add links to the table of content, files and website
+\usepackage{graphicx} % Required for inserting images
+\usepackage{tabto}
+\usepackage[dvipsnames]{xcolor} % Text color package and more colors
+\usepackage{tikz} % Graph package
+\usepackage{pdfpages}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage[demo]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,mathtools,stmaryrd} % Math libraries
+
+\usepackage{listings} % required for specific languages
+\lstset{ % Set listing package options
+    language=bash, % choose the language of the code
+    basicstyle=\fontfamily{pcr}\selectfont\footnotesize\color{red},
+    keywordstyle=\color{black}\bfseries, % style for keywords
+    numbers=none, % where to put the line-numbers
+    numberstyle=\tiny, % the size of the fonts that are used for the line-numbers     
+    backgroundcolor=\color{white},
+    showspaces=false, % show spaces adding particular underscores
+    showstringspaces=false, % underline spaces within strings
+    showtabs=false, % show tabs within strings adding particular underscores
+    frame=single, % adds a frame around the code
+    tabsize=2, % sets default tabsize to 2 spaces
+    rulesepcolor=\color{gray},
+    rulecolor=\color{black},
+    captionpos=b, % sets the caption-position to bottom
+    breaklines=true, % sets automatic line breaking
+    breakatwhitespace=false, 
+}
+
+%\usepackage{eso-pic,lipsum}
+%\AddToShipoutPicture{%
+%	\AtTextCenter{%
+%		\fboxsep5mm \fboxrule=0.8pt
+%		\makebox(0,0)[c]{\fbox{\rule{0pt}\textheight\rule\textwidth{0pt}}}%
+%	}%
+%}
+
+%%%%%%%%%%%%
+% COMMANDS %
+%%%%%%%%%%%%
+\makeatletter 
+
+\lstset{aboveskip=\baselineskip,belowskip=\baselineskip,basicstyle=\ttfamily} % Formating line break after bash commands
+
+% Get rid of 0. chapter's number
+\renewcommand{\thesection}{%
+  \ifnum\c@chapter<1 \@arabic\c@section
+  \else \thechapter.\@arabic\c@section
+  \fi
+}
+
+
+% Rules for \bar{x} and \overline{x} commands
+\newcommand*{\Xbar}{}%
+\DeclareRobustCommand*{\Xbar}{%
+  \mathpalette\@Xbar{}%
+}
+
+\newcommand*{\@Xbar}[2]{%
+  % #1: math style
+  % #2: unused (empty)
+  \sbox0{$#1\mathrm{X}\m@th$}%
+  \sbox2{$#1X\m@th$}%
+  \rlap{%
+    \hbox to\wd2{%
+      \hfill
+      $\overline{%
+        \vrule width 0pt height\ht0 %
+        \kern\wd0 %
+      }$%
+    }%
+  }%
+  \copy2 %
+}
+
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENTS SETTINGS %
+%%%%%%%%%%%%%%%%%%%%%%
+% Fist page
+\title{\Huge Fiche de révision Commande des Systèmes Dynamiques}
+\author{\LARGE Alexis GRACIAS}
+\date{\Large \today}
+
+% Document
+\begin{document}
+\maketitle
+\Large \tableofcontents
+
+%%%%%%%%%%%
+% INCLUDE %
+%%%%%%%%%%%
+
+\include{Oraganisation_du_cours}
+\include{Chapitre1}
+\include{Chapitre2}
+\include{Chapitre3}
+\include{Chapitre4}
+
+\end{document}

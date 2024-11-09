@@ -1,0 +1,101 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{\numberline {1}Structure d'un système asservi}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Notion d'automatique}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Notion de système}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Modélisation d'un système :}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}En continu : }{4}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}En Discret :}{4}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Type de commande :}{5}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Structure d'un système asservi monovariable}{5}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Critère des systèmes asservis}{7}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Rapidité}{7}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Stabilité}{8}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Précision}{9}{subsection.1.6.3}%
+\contentsline {section}{\numberline {1.7}Formule de Black}{10}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Correcteurs}{10}{section.1.8}%
+\contentsline {subsection}{\numberline {1.8.1}Proportionnel}{11}{subsection.1.8.1}%
+\contentsline {subsection}{\numberline {1.8.2}Intégral}{11}{subsection.1.8.2}%
+\contentsline {subsection}{\numberline {1.8.3}Dérivé}{11}{subsection.1.8.3}%
+\contentsline {section}{\numberline {1.9}Diagramme de Bode}{11}{section.1.9}%
+\contentsline {section}{\numberline {1.10}Diagramme de Nyquist}{12}{section.1.10}%
+\contentsline {section}{\numberline {1.11}Transformée en $z$}{13}{section.1.11}%
+\contentsline {subsection}{\numberline {1.11.1}Principe de fonctionnement}{13}{subsection.1.11.1}%
+\contentsline {subsection}{\numberline {1.11.2}Propriétés}{13}{subsection.1.11.2}%
+\contentsline {chapter}{\numberline {2}Représentation d'état, commandabilité, observabilité}{14}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Représentation d'état}{14}{section.2.1}%
+\contentsline {subsubsection}{Cas des systèmes continus}{14}{section*.2}%
+\contentsline {subsubsection}{Cas des SLCI}{14}{section*.3}%
+\contentsline {subsubsection}{Cas des systèmes discrets}{15}{section*.4}%
+\contentsline {subsubsection}{Cas des SLDI}{15}{section*.5}%
+\contentsline {section}{\numberline {2.2}Point d'équilibre}{16}{section.2.2}%
+\contentsline {subsubsection}{En continu}{16}{section*.6}%
+\contentsline {subsubsection}{En discret}{16}{section*.7}%
+\contentsline {section}{\numberline {2.3}Solution de la représentation d'état}{17}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Cas des SLCI}{17}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Cas discret}{17}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Représentation de la stabilité}{18}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Modélisation de la stabilité}{18}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Stabilité au sens de Lyapunov}{18}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Stabilité asymptotique}{18}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Stabilité exponentielle}{18}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Stabilité Entrée Bornée Sortie Bornée (EBSB)}{20}{subsection.2.5.4}%
+\contentsline {subsubsection}{\Large {cas continu}}{20}{section*.8}%
+\contentsline {subsubsection}{\Large {cas discret}}{20}{section*.9}%
+\contentsline {section}{\numberline {2.6}Passage de la représentation d'état à la fonction de transfert}{21}{section.2.6}%
+\contentsline {subsubsection}{Cas continu}{21}{section*.10}%
+\contentsline {subsubsection}{Cas discret}{21}{section*.11}%
+\contentsline {section}{\numberline {2.7}Passage de la fonction de transfert à la représentation d'état}{21}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Changement de base}{23}{section.2.8}%
+\contentsline {subsubsection}{Cas continu}{23}{section*.12}%
+\contentsline {subsubsection}{Cas discret}{23}{section*.13}%
+\contentsline {section}{\numberline {2.9}commandabilité - systèmes commandables}{24}{section.2.9}%
+\contentsline {subsubsection}{Cas continu}{24}{section*.14}%
+\contentsline {subsubsection}{Cas discret}{24}{section*.15}%
+\contentsline {subsubsection}{Cas continu}{24}{section*.16}%
+\contentsline {subsubsection}{Cas discret}{24}{section*.17}%
+\contentsline {section}{\numberline {2.10}commandabilité - systèmes partiellement commandables}{25}{section.2.10}%
+\contentsline {section}{\numberline {2.11}Interprétation de la commandabilité}{25}{section.2.11}%
+\contentsline {section}{\numberline {2.12}observabilité}{26}{section.2.12}%
+\contentsline {subsubsection}{Cas continu}{26}{section*.18}%
+\contentsline {subsubsection}{Cas discret}{26}{section*.19}%
+\contentsline {subsubsection}{Cas continu}{26}{section*.20}%
+\contentsline {subsubsection}{Cas discret}{26}{section*.21}%
+\contentsline {section}{\numberline {2.13}Forme canonique de Kalman}{27}{section.2.13}%
+\contentsline {chapter}{\numberline {3}Commande des systèmes par approche d'état}{28}{chapter.3}%
+\contentsline {section}{\numberline {3.1}\large {Rôle du correcteur}}{28}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Retour d'état}{29}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Cas continu}{29}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Cas discret}{29}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Calcul du retour d'état par placement des pôles}{30}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Cas continu}{30}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Cas discret}{30}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Principe}{30}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Calcul de $K$}{31}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Critères à respecter pour le choix des $\lambda _{i}$}{31}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Exemple pour la formule d'Ackerman}{32}{subsection.3.3.6}%
+\contentsline {section}{\numberline {3.4}Calcul du gain statique}{33}{section.3.4}%
+\contentsline {subsubsection}{Cas continu}{33}{section*.22}%
+\contentsline {subsubsection}{Cas discret}{33}{section*.23}%
+\contentsline {subsection}{\numberline {3.4.1}perturbation constante et mesurable}{34}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Exemple : suspension magnétique}{35}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Commande par retour d'état des systèmes partiellment commandables}{40}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Commande modale}{41}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Opérateur $q$}{41}{subsection.3.6.1}%
+\contentsline {subsubsection}{Cas continu}{41}{section*.25}%
+\contentsline {subsubsection}{Cas discret}{41}{section*.26}%
+\contentsline {subsection}{\numberline {3.6.2}Variable $q$}{41}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Principe}{41}{subsection.3.6.3}%
+\contentsline {section}{\numberline {3.7}Modification des pôles de la fonction de transfert}{42}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Commande LQ}{43}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Principe}{43}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Solution}{43}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}Commande LQ à l'horizon infini - cas continu}{44}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}Exemple : mouvement latéral d'un avion}{45}{subsection.3.8.4}%
+\contentsline {section}{\numberline {3.9}Commande à action intégrale}{46}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Principe}{46}{subsection.3.9.1}%
+\contentsline {chapter}{\numberline {4}Commande par retour d'état avec observateur}{48}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Reconstruction de l'état}{48}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Calcul du gain L par placement des pôles}{49}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Principe}{49}{subsection.4.2.1}%
+\contentsline {subsubsection}{Cas continu}{49}{section*.30}%
+\contentsline {subsubsection}{Cas Discret}{49}{section*.31}%

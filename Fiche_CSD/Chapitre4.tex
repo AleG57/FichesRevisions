@@ -1,0 +1,70 @@
+\chapter{Commande par retour d'état avec observateur}
+\section{Reconstruction de l'état}
+En général, le vecteur d'état est inaccessible. Il faut alors observer le système et reconstruire la représentation d'état par le biais de l'observateur comme suit :
+\begin{center}
+    \Large{
+            \[
+        \left \{
+        \begin{array}{c @{=} c}
+            \dot{\hat{x}}(t) & A\hat{x}(t) + Bu(t) + L(z(t) - \hat{z}(t))\\
+            \hat{z}(t) & C\hat{x}(t)
+        \end{array}
+        \right.
+        \]
+    } 
+\end{center}
+Erreur de Reconstruction :
+\begin{center}
+    \Large{\fbox{$
+    \epsilon(t) = x(t) - \hat{x}(t)
+    $}}
+    \Large{\fbox{$
+    \dot{\epsilon}(t) = (A - LC)\epsilon(t)
+    $}}
+\end{center}
+\footnote{
+De même en discret : 
+\[
+    \left \{
+    \begin{array}{c @{=} c}
+        \hat{x}[k+1] & F\hat{x}[k] + Gu[k] + L(z[k] - \hat{z}[k])\\
+        \hat{z}[k] & C\hat{x}[k]
+    \end{array}
+    \right.
+\] \newline
+$\epsilon[k] = x[k] - \hat{x}[k]$ \newline
+$\epsilon[k+1] = (F - LC)\epsilon[k]$
+}
+\newpage
+\begin{figure}[hbt!]
+    \includegraphics[scale=0.7]{Pics/observateur_chap4.png}
+\end{figure}
+\section{Calcul du gain L par placement des pôles}
+\subsection{Principe}
+Choix des valeurs propres de $A - LC$ (ou $F - LC$)
+\subsubsection{Cas continu}
+\begin{center}
+    \Large{\fbox{$
+    \epsilon(t) = e^{(A- LC)(t-t_{0})}\epsilon (t_{0}) = \sum_{i=1}^{n}\alpha_{i}e^{\lambda_{i}(t-t_{0})}
+    $}} 
+    \footnote{Les $(\lambda_{i})_{i \in \{1;n\}}$ valeurs propres de $A - LC$}
+\end{center} 
+\subsubsection{Cas Discret}
+\begin{center}
+    \Large{\fbox{$
+    \epsilon{k} = (F - LC)^{k-k_{0}}\epsilon [k_{0}] = \sum_{i=1}^{n}\alpha_{i}\lambda_{i}^{k-k_{0}}
+    $}} 
+    \footnote{Les $(\lambda_{i})_{i \in \{1;n\}}$ valeurs propres de $F - LC$}
+\end{center} 
+Calcul de $L$ tel que :
+\begin{center}
+    \Large{\fbox{$
+    |\lambda I_{n} - (A - LC)| = \prod_{i=1}^{n}(\lambda - \lambda_{i})
+    $}}
+\end{center}
+OU
+\begin{center}
+    \Large{\fbox{$
+    |\lambda I_{n} - (F - LC)| = \prod_{i=1}^{n}(\lambda - \lambda_{i})
+    $}}
+\end{center}

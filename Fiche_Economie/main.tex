@@ -1,0 +1,65 @@
+\documentclass[30pt, french]{report}
+
+% Importing libraries
+\usepackage[french]{babel}
+\usepackage{hyperref} % Add links to the table of content, files and website
+\usepackage{graphicx} % Required for inserting images
+\usepackage{tabto}
+\usepackage[dvipsnames]{xcolor} % Text color package and more colors
+\usepackage{tikz} % Graph package
+\usepackage{pdfpages}
+\usepackage{amsmath}
+
+\usepackage{listings} % required for specific languages
+\lstset{ % Set listing package options
+    language=bash, % choose the language of the code
+    basicstyle=\fontfamily{pcr}\selectfont\footnotesize\color{red},
+    keywordstyle=\color{black}\bfseries, % style for keywords
+    numbers=none, % where to put the line-numbers
+    numberstyle=\tiny, % the size of the fonts that are used for the line-numbers     
+    backgroundcolor=\color{white},
+    showspaces=false, % show spaces adding particular underscores
+    showstringspaces=false, % underline spaces within strings
+    showtabs=false, % show tabs within strings adding particular underscores
+    frame=single, % adds a frame around the code
+    tabsize=2, % sets default tabsize to 2 spaces
+    rulesepcolor=\color{gray},
+    rulecolor=\color{black},
+    captionpos=b, % sets the caption-position to bottom
+    breaklines=true, % sets automatic line breaking
+    breakatwhitespace=false, 
+}
+
+\usepackage[utf8]{inputenc}
+
+\lstset{aboveskip=\baselineskip,belowskip=\baselineskip,basicstyle=\ttfamily} % Formating line break after bash commands
+
+% Get rid of 0. chapter's number
+\makeatletter 
+\renewcommand{\thesection}{%
+  \ifnum\c@chapter<1 \@arabic\c@section
+  \else \thechapter.\@arabic\c@section
+  \fi
+}
+\makeatother
+
+% Fist page
+\title{\Huge Fiche de révision Economie}
+\author{\LARGE Alexis GRACIAS}
+\date{\Large Octobre 2024}
+
+% Document's settings
+\begin{document}
+\maketitle
+\Large \tableofcontents
+
+
+% Including all chapters
+\include{Chapitre1}
+\include{Chapitre2}
+\include{Chapitre3}
+\include{Chapitre4}
+\include{Chapitre5}
+
+\listoftables
+\end{document}
