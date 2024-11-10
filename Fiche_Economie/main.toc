@@ -1,95 +1,116 @@
 \babel@toc {french}{}\relax 
-\contentsline {chapter}{\numberline {1}Introduction : qu'est-ce que la science économique ?}{5}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Définition}{5}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Economie positive vs normative}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Macro et micro économie}{6}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Analyse conjonturelle et structurelle}{6}{section.1.4}%
-\contentsline {section}{\numberline {1.5}l'économie est-elle une science ?}{6}{section.1.5}%
-\contentsline {section}{\numberline {1.6}histoire de l'économie}{7}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}1776 - 1870 : \textcolor {BrickRed}{Les classiques}}{7}{subsection.1.6.1}%
-\contentsline {subsection}{\numberline {1.6.2}1870 - 1920 : \textcolor {BrickRed}{Les néoclassiques (micro)}}{7}{subsection.1.6.2}%
-\contentsline {subsection}{\numberline {1.6.3}1930 : \textcolor {BrickRed}{Keynes (macro)}}{7}{subsection.1.6.3}%
-\contentsline {subsection}{\numberline {1.6.4}1940 - 1970 : Synthèse néoclassique}{8}{subsection.1.6.4}%
-\contentsline {subsection}{\numberline {1.6.5}1970 : Critique de la vision keynésienne \textcolor {BrickRed}{Monétarisme}}{8}{subsection.1.6.5}%
-\contentsline {subsection}{\numberline {1.6.6}1990 : \textcolor {BrickRed}{Nouveaux keynésiens et classiques}}{8}{subsection.1.6.6}%
-\contentsline {chapter}{\numberline {2}Marchés et régulations}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}La concurrence en Europe}{9}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Loi de l'offre et la demande}{10}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Courbe de l'offre en situation de concurrence}{10}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Elasticité-prix $\epsilon $ de la demande}{11}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Elasticité à court et à long terme}{11}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Elasticité des prix croisés de la demande}{12}{subsection.2.1.5}%
-\contentsline {subsection}{\numberline {2.1.6}Elasticité revenu de la demande}{12}{subsection.2.1.6}%
-\contentsline {section}{\numberline {2.2}La technologie de l'entreprise}{13}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Concurrence parfaite}{14}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Dynamique de la concurrence parfaite}{15}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Surplus du consommateur}{16}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Les défaillances du marché}{17}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Biens économiques}{17}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Externalité}{17}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Le monopole}{18}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Comportement de l'entreprise}{18}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}L'inefficience du monopole}{19}{subsection.2.5.2}%
-\contentsline {section}{\numberline {2.6}Les interractions stratégiques (ententes)}{20}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Duopole de Cournot}{21}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Duopole de Bertrand}{22}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}Duopole de Stackelberg}{23}{subsection.2.6.3}%
-\contentsline {subsection}{\numberline {2.6.4}Entente collusive ou cartel}{25}{subsection.2.6.4}%
-\contentsline {chapter}{\numberline {3}Financement et rôle de la monnaie}{26}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Définitions}{26}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Les caractéristiques de la monnaie}{26}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Les fonctions de la monnaie}{26}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Les écoles de pensée}{27}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Remarques}{27}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Théorie quantitative de la monnaie}{27}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Friedman et la vision monétariste}{28}{subsection.3.2.3}%
-\contentsline {subsubsection}{Théorie du revenu permanent}{28}{section*.2}%
-\contentsline {section}{\numberline {3.3}La création monétaire}{29}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Prêts et font de dépôt}{29}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Couverture}{29}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Multiplicateur de dépôts}{29}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Banque centrale}{30}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}Liquidité bancaire}{31}{subsection.3.3.5}%
-\contentsline {subsection}{\numberline {3.3.6}Les instruments de la politque monétaire de l'eurosystème}{31}{subsection.3.3.6}%
-\contentsline {subsection}{\numberline {3.3.7}Le financement de l'économie}{32}{subsection.3.3.7}%
-\contentsline {subsection}{\numberline {3.3.8}Formes de financement}{32}{subsection.3.3.8}%
-\contentsline {section}{\numberline {3.4}Histoire des faits économiques}{33}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Marchés capitaux}{34}{subsection.3.4.1}%
-\contentsline {chapter}{\numberline {4}Conjoncture et économie politique}{35}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Les faits empiriques}{35}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Le modèle IS-LM}{36}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Modèle IS - Marché des biens et services}{36}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Modèle LM - Marché de la monnaie}{37}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Equilibre IS - LM}{39}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}La critique de la courbe de Philips}{40}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Principe d ela courbe de Philips}{40}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Solow-Samuelson}{42}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}La critique de Friedman}{43}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Les anticipations rationnelles de Lucas}{43}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Le chômage}{44}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Définition}{44}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Autres Définitions}{45}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Chômage structurel}{46}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Chômage conjoncturel}{47}{subsection.4.4.4}%
-\contentsline {subsubsection}{Loi d'Okun}{47}{section*.3}%
-\contentsline {chapter}{\numberline {5}Economie internationnale et globalisation}{48}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Commerce internationnal}{48}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Faits empiriques}{48}{subsection.5.1.1}%
-\contentsline {subsubsection}{Les accords commerciaux régionnaux}{49}{section*.4}%
-\contentsline {subsection}{\numberline {5.1.2}L'organisation mondiale du commerce}{49}{subsection.5.1.2}%
-\contentsline {subsubsection}{3 Obligations : }{50}{section*.5}%
-\contentsline {subsubsection}{2 Interdictions : }{50}{section*.6}%
-\contentsline {subsubsection}{3 Execeptions : }{50}{section*.7}%
-\contentsline {subsubsection}{Les vagues de la mondialisation :}{50}{section*.8}%
-\contentsline {subsubsection}{Autres faits :}{50}{section*.9}%
-\contentsline {subsection}{\numberline {5.1.3}Théories explicatives}{51}{subsection.5.1.3}%
-\contentsline {subsubsection}{Les avantages du commerce internationnal}{51}{section*.10}%
-\contentsline {subsubsection}{Théorie des dotations factorielles}{52}{section*.11}%
-\contentsline {subsubsection}{Théorie HOS}{52}{section*.12}%
-\contentsline {subsubsection}{Échanges de similitude}{52}{section*.13}%
-\contentsline {subsubsection}{Théorie de la demande représentative de Linder}{53}{section*.14}%
-\contentsline {subsubsection}{Théorie de la demande de variété de Lassudrie-Duchêne}{53}{section*.15}%
-\contentsline {subsubsection}{Le protectionnisme}{53}{section*.16}%
-\contentsline {subsubsection}{Commerce intra-firme}{54}{section*.17}%
-\contentsline {section}{\numberline {5.2}Finance internationnale : les échanges de capitaux}{54}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}La balance des paiements}{54}{subsection.5.2.1}%
+\contentsline {chapter}{\numberline {1}Introduction : qu'est-ce que la science économique ?}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Définition}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Economie positive vs normative}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Macro et micro économie}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Analyse conjonturelle et structurelle}{7}{section.1.4}%
+\contentsline {section}{\numberline {1.5}l'économie est-elle une science ?}{7}{section.1.5}%
+\contentsline {section}{\numberline {1.6}histoire de l'économie}{8}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}1776 - 1870 : \textcolor {BrickRed}{Les classiques}}{8}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}1870 - 1920 : \textcolor {BrickRed}{Les néoclassiques (micro)}}{8}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}1930 : \textcolor {BrickRed}{Keynes (macro)}}{8}{subsection.1.6.3}%
+\contentsline {subsection}{\numberline {1.6.4}1940 - 1970 : Synthèse néoclassique}{9}{subsection.1.6.4}%
+\contentsline {subsection}{\numberline {1.6.5}1970 : Critique de la vision keynésienne \textcolor {BrickRed}{Monétarisme}}{9}{subsection.1.6.5}%
+\contentsline {subsection}{\numberline {1.6.6}1990 : \textcolor {BrickRed}{Nouveaux keynésiens et classiques}}{9}{subsection.1.6.6}%
+\contentsline {chapter}{\numberline {2}Marchés et régulations}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}La concurrence en Europe}{10}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Loi de l'offre et la demande}{11}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Courbe de l'offre en situation de concurrence}{11}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Elasticité-prix $\epsilon $ de la demande}{12}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Elasticité à court et à long terme}{12}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Elasticité des prix croisés de la demande}{13}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Elasticité revenu de la demande}{13}{subsection.2.1.6}%
+\contentsline {section}{\numberline {2.2}La technologie de l'entreprise}{14}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Concurrence parfaite}{15}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Dynamique de la concurrence parfaite}{16}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Surplus du consommateur}{17}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Les défaillances du marché}{18}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Biens économiques}{18}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Externalité}{18}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Le monopole}{19}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Comportement de l'entreprise}{19}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}L'inefficience du monopole}{20}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}Les interractions stratégiques (ententes)}{21}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Duopole de Cournot}{22}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Duopole de Bertrand}{23}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Duopole de Stackelberg}{24}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Entente collusive ou cartel}{26}{subsection.2.6.4}%
+\contentsline {chapter}{\numberline {3}Financement et rôle de la monnaie}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Définitions}{27}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Les caractéristiques de la monnaie}{27}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Les fonctions de la monnaie}{27}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Les écoles de pensée}{28}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Remarques}{28}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Théorie quantitative de la monnaie}{28}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Friedman et la vision monétariste}{29}{subsection.3.2.3}%
+\contentsline {subsubsection}{Théorie du revenu permanent}{29}{section*.2}%
+\contentsline {section}{\numberline {3.3}La création monétaire}{30}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Prêts et font de dépôt}{30}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Couverture}{30}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Multiplicateur de dépôts}{30}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Banque centrale}{31}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Liquidité bancaire}{32}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Les instruments de la politque monétaire de l'eurosystème}{32}{subsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.7}Le financement de l'économie}{33}{subsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.3.8}Formes de financement}{33}{subsection.3.3.8}%
+\contentsline {section}{\numberline {3.4}Histoire des faits économiques}{34}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Marchés capitaux}{35}{subsection.3.4.1}%
+\contentsline {chapter}{\numberline {4}Conjoncture et économie politique}{36}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Les faits empiriques}{36}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Le modèle IS-LM}{37}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Modèle IS - Marché des biens et services}{37}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Modèle LM - Marché de la monnaie}{38}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Equilibre IS - LM}{40}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}La critique de la courbe de Philips}{41}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Principe d ela courbe de Philips}{41}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Solow-Samuelson}{43}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}La critique de Friedman}{44}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Les anticipations rationnelles de Lucas}{44}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Le chômage}{45}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Définition}{45}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Autres Définitions}{46}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Chômage structurel}{47}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Chômage conjoncturel}{48}{subsection.4.4.4}%
+\contentsline {subsubsection}{Loi d'Okun}{48}{section*.3}%
+\contentsline {chapter}{\numberline {5}Economie internationnale et globalisation}{49}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Commerce internationnal}{49}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Faits empiriques}{49}{subsection.5.1.1}%
+\contentsline {subsubsection}{Les accords commerciaux régionnaux}{50}{section*.4}%
+\contentsline {subsection}{\numberline {5.1.2}L'organisation mondiale du commerce}{50}{subsection.5.1.2}%
+\contentsline {subsubsection}{3 Obligations : }{51}{section*.5}%
+\contentsline {subsubsection}{2 Interdictions : }{51}{section*.6}%
+\contentsline {subsubsection}{3 Execeptions : }{51}{section*.7}%
+\contentsline {subsubsection}{Les vagues de la mondialisation :}{51}{section*.8}%
+\contentsline {subsubsection}{Autres faits :}{51}{section*.9}%
+\contentsline {subsection}{\numberline {5.1.3}Théories explicatives}{52}{subsection.5.1.3}%
+\contentsline {subsubsection}{Les avantages du commerce internationnal}{52}{section*.10}%
+\contentsline {subsubsection}{Théorie des dotations factorielles}{53}{section*.11}%
+\contentsline {subsubsection}{Théorie HOS}{53}{section*.12}%
+\contentsline {subsubsection}{Échanges de similitude}{53}{section*.13}%
+\contentsline {subsubsection}{Théorie de la demande représentative de Linder}{54}{section*.14}%
+\contentsline {subsubsection}{Théorie de la demande de variété de Lassudrie-Duchêne}{54}{section*.15}%
+\contentsline {subsubsection}{Le protectionnisme}{54}{section*.16}%
+\contentsline {subsubsection}{Commerce intra-firme}{55}{section*.17}%
+\contentsline {section}{\numberline {5.2}Finance internationnale : les échanges de capitaux}{55}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}La balance des paiements}{55}{subsection.5.2.1}%
+\contentsline {chapter}{\numberline {6}Croissance et environnement}{56}{chapter.6}%
+\contentsline {section}{\numberline {6.1}La croissance et l'environnement}{56}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Les 3 piliers dde la croissance}{56}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Les conséquences de la croissance}{56}{subsection.6.1.2}%
+\contentsline {subsubsection}{Constat}{57}{section*.18}%
+\contentsline {subsubsection}{Conséquences}{57}{section*.19}%
+\contentsline {section}{\numberline {6.2}Faits stylisés}{57}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Les nouvelles théories de la croissance}{58}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}La nouvelle économie \& Paul Romer}{58}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Objectifs Européens de Lisbonne (mars 2000)}{58}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Objectifs Européens de Barcelone (mars 2002)}{58}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}Education et innovation}{58}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Education et croissance}{58}{subsection.6.4.1}%
+\contentsline {section}{\numberline {6.5}Économie de l’environnement et des ressources naturelles}{59}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}La courbe environnementale de Kuznets}{59}{subsection.6.5.1}%
+\contentsline {chapter}{\numberline {7}Comptabilité nationnale}{60}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Les identités comptables en économie fermée}{60}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Interprétation}{61}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Conséquences}{61}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Les identités comptables en économie ouverte}{62}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Remarques liées au TD}{63}{section.7.5}%
