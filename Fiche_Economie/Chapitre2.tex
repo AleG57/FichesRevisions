@@ -27,10 +27,6 @@ q : quantité du produit
     \item $\epsilon \in [-1;0[$ : faiblement élastique
     \item $\epsilon \in ]-\infty;-1]$ : élastique
 \end{itemize}
-\begin{center}
-    \includegraphics[scale=0.8]{Pics/Elasticite_prix.png}    
-\end{center}
-\newpage
 \subsection{Elasticité à court et à long terme}
 Il faut un certain  temps avant que la quantité d'un produit se stabilise face à une variation de prix
 \begin{center}
@@ -40,7 +36,7 @@ Il faut un certain  temps avant que la quantité d'un produit se stabilise face 
 \subsection{Elasticité des prix croisés de la demande}
 C'est la mesure de la déportation d'un produit A vers un produit B lorsque le prix de A augmente.
 \begin{center}
-    \huge{\fbox{$\epsilon_{i,j} = \frac{\frac{dQ_{i}}{Q_{i}}}{\frac{dp_{j}}{p_{j}}}=\frac{dQ_{i}}{dp_{j}}\frac{p_{j}}{Q_{j}}$}}
+    \huge{\fbox{$\epsilon_{i,j} = \frac{\frac{\partial Q_{i}}{Q_{i}}}{\frac{\partial p_{j}}{p_{j}}}=\frac{\partial Q_{i}}{\partial p_{j}}\frac{p_{j}}{Q_{j}}$}}
 \end{center}
 \begin{itemize}
     \item Si $\epsilon_{i,j} > 0 $: les biens sont substituables
@@ -49,7 +45,6 @@ C'est la mesure de la déportation d'un produit A vers un produit B lorsque le p
 \begin{center}
     \includegraphics[scale=0.8]{Pics/elasticite_prix_croises.png}
 \end{center}
-\newpage
 \subsection{Elasticité revenu de la demande}
 C'est la mesure de l'évolution du revenu réel du consommateur et de l'évolution de la quantité de produit.
 \begin{center}
@@ -197,10 +192,10 @@ Condition de premier ordre :
 \end{center}
 \begin{center}
     \Large{$\frac{d\pi(Q)}{dQ} = \textcolor{BrickRed}{\frac{dp(Q)}{dQ}Q + p(Q)} - \textcolor{green}{\frac{dCT(Q)}{dQ}} = 0$}
-\end{center} avec :
+\end{center}
 \begin{itemize}
-    \item\fbox{\textcolor{BrickRed}{$\frac{dp(Q)}{dQ}Q + p(Q) = R_{m}(Q)$}} la recette marginale
-    \item \textcolor{green}{$\frac{dCT(Q)}{dQ}$} le coût marginal
+    \item\fbox{\textcolor{BrickRed}{$\frac{dp(Q)}{dQ}Q + p(Q) = R_{m}(Q)$}} la recette marginale \newline
+    \item \textcolor{green}{$\frac{dCT(Q)}{dQ}$} le coût marginal \newline
     \item $\epsilon = \frac{dQ}{dp}\frac{p}{Q}$ (pour rappel)
 \end{itemize}
 Donc
@@ -238,47 +233,55 @@ Taux de marge :
 \end{center}
 \newpage
 \section{Les interractions stratégiques (ententes)}
-Les situations de concurrence et de monopole sont deux structures de marché extrêmes et ne reflètent pas la réalité. En efft, il existe des phénomènes d'interdépendance et de startégies d'entrepriises qui mènent à des ententes entres entreprises. \newline
+Les situations de concurrence et de monopole sont deux structures de marché extrêmes et ne reflètent pas la réalité. En efft, il existe des phénomènes d'interdépendance et de startégies d'entreprises qui mènent à des ententes entres entreprises. \newline
 
 \textbf{\textcolor{BrickRed}{Oligopole}} : nombre limité de grandes entreprises réalisant une part très importante de la production du secteur.
-
+\newline
 \begin{itemize}
-    \item \textbf{Duopole de Cournot} : la quantité produite est la variable explicative de ces phénomènes
-    \item \textbf{Duopole de Bertrand} privilégie le prix
+    \item \textbf{Duopole de Cournot} : la quantité produite est la variable explicative de ces phénomènes \newline
+    \item \textbf{Duopole de Bertrand} privilégie le prix \newline
     \item \textbf{Duopole de Stackelberg} : rôle des entreprises asymétrique (leader/follower)
 \end{itemize}
 \newpage
 \subsection{Duopole de Cournot}
-Soient deux entreprises qui produisent une quantité $q_{1}$ et $q_{2}$ de produits. Les coûts totaux sont $c_{1}q_{1}$ et $c_{2}q_{2}$.
+Soient deux entreprises qui produisent une quantité $q_{1}$ et $q_{2}$ de produits. Les coûts totaux sont $c_{1}q_{1}$ et $c_{2}q_{2}$. \newline
 \begin{itemize}
-    \item Quantité totale produite : 
+    \item Quantité totale produite : \newline
+    \textcolor{White}{.}
         \begin{center}
             \Large{\fbox{$Q = q_{1} + q_{2}$}}
         \end{center}
-    \item Fonction de demande inverse :
+    \textcolor{White}{.}
+    \item Fonction de demande inverse : \newline
+    \textcolor{White}{.}
     \begin{center}
         \Large{\fbox{$p(Q) = p(q_{1} + q_{2}) = A - (q_{1} + q_{2})$}}
     \end{center}
-    \item Maximisation du profit de l'entreprise 1 et 2 :
+    \textcolor{White}{.}
+    \item Maximisation du profit de l'entreprise 1 et 2 : \newline
+    \textcolor{White}{.}
         \begin{center}
             \begin{itemize}
-                \item \Large{\fbox{$max  \pi(q_{1},q_{2}) = p(q_{1},q_{2})q_{1} - c_{1}(q_{1})$} (1)}
-                \item \Large{\fbox{$max  \pi(q_{1},q_{2}) = p(q_{1},q_{2})q_{2} - c_{2}(q_{2})$} (2)}
+                \Large{\fbox{$max  \pi(q_{1},q_{2}) = p(q_{1},q_{2})q_{1} - c_{1}(q_{1})$}} \newline
+                \Large{\fbox{$max  \pi(q_{1},q_{2}) = p(q_{1},q_{2})q_{2} - c_{2}(q_{2})$}}
             \end{itemize}
         \end{center}
-    \item Conditions de premier ordre :
+    \textcolor{White}{.}
+    \item Conditions de premier ordre : \newline
+    \textcolor{White}{.}
     \begin{center}
             \begin{itemize}
-                \item \Large{\fbox{$\frac{d\pi_{1}(q_{1},q_{2})}{dq_{1}} = 0$}}
-                \item \Large{\fbox{$\frac{d\pi_{2}(q_{1},q_{2})}{dq_{2}} = 0$}}
+                \Large{\fbox{$\frac{\partial \pi_{1}(q_{1},q_{2})}{\partial q_{1}} = 0$}}
+                \Large{\fbox{$\frac{\partial \pi_{2}(q_{1},q_{2})}{\partial q_{2}} = 0$}}
             \end{itemize}
     \end{center}
+    \textcolor{White}{.}
 \end{itemize}
 \includegraphics[scale=0.8]{Pics/Duopole_cournot.png}
 \newpage
 \subsection{Duopole de Bertrand}
 La valeur stratégique de l'entreprise est le prix. La fonction de demande du marché $D$ s'exprime en fonction du prix $p$ fixé par les deux entreprises.
-Lorsque les prix fixés sont différents, on note $\forall i \in {1,2}, D_{i}$ la fonction demande du marché pour l'entreprise $i$. La demande sera adressée à l'entreprise ayant le priux le plus faible.
+Lorsque les prix fixés sont différents, on note $\forall i \in \{1,2\}, D_{i}$ la fonction demande du marché pour l'entreprise $i$. La demande sera adressée à l'entreprise ayant le prix le plus faible.
 \[
 \left \{
 \begin{array}{c}
@@ -289,19 +292,81 @@ Lorsque les prix fixés sont différents, on note $\forall i \in {1,2}, D_{i}$ l
 \right.
 \]
 \begin{itemize}
-    \item Si $c_{1} = c_{2} = c$, la maximisation du profit $\pi_{i}$ pour les entreprises est :
+    \item Si $c_{1} = c_{2} = c$, la maximisation du profit $\pi_{i}$ pour les entreprises est : \newline
+    \textcolor{White}{.}
     \begin{center}
         \Large{\fbox{$\pi_{i}(q_{i}) = (p_{i} - c)q_{i}$ avec $CT_{i}(q_{i}) = cq_{i}$}}
     \end{center}
-    \item Si $CT{1}(q_{1}) = c_{1}q_{1}$ et $CT{2}(q_{2}) = c_{2}q_{2}$ avec $c_{1} < c_{2}$, la maximisation du profit $\pi_{1}$ de l'entreprise 1 est :
+    \textcolor{White}{.}
+    \item Si $CT{i}(q_{i}) = c_{i}q_{i}$ et $CT{j}(q_{j}) = c_{j}q_{j}$ avec $c_{i} < c_{j}$, la maximisation du profit $\pi_{i}$ de l'entreprise i est : \newline
+    \textcolor{White}{.}
     \begin{center}
-        \Large{\fbox{$\pi_{1}(q_{1}) = D(c_{2})(c_{2} - c_{1})$}}
+        \Large{\fbox{$\pi_{i}(q_{i}) = D(c_{j})(c_{j} - c_{i})$}}
     \end{center}
-    Le coût moins élevé de l'entreprise 1 permet de s'accaparer la demande
+    \textcolor{White}{.}
+    \item Le coût moins élevé de l'entreprise 1 permet de s'accaparer la demande. La maximisation du profit pour les deux entreprises mènent à $p_{1} = p_{2} = c$. \textbf{L'équilibre de Bertrand mène au même résultats que la concurrence parfaite : profits nuls pour les entreprises à condition que les deux entreprises agissent de la même manière}
 \end{itemize}
 \newpage
 \subsection{Duopole de Stackelberg}
-
+Dans le cas d'un duopole de Stackelberg, une entreprise est en position dominante, \textbf{leader} et l'autre la suit, elle est \textbf{follower}. L'entreprise \textbf{leader} prend des décisions que l'autre entreprise ne peut contester et \textbf{anticipe ses réactions}. \newline
+\begin{itemize}
+    \item Maximisation du profit du \textbf{follower} (entreprise 2) : \newline
+    \textcolor{White}{.}
+    \begin{center}
+        \Large{\fbox{$
+        max \pi_{2}(q_{1},q_{2}) = p(q_{1},q_{2})q_{2} - c_{2}q_{2}
+        $}}
+    \end{center}    \textcolor{White}{.}
+    \item Conditions de premier ordre : \newline
+    \textcolor{White}{.}
+    \begin{center}
+        \Large{\fbox{$
+        \frac{\partial \pi_{2}(q_{1},q_{2})}{\partial q_{2}} = 0
+        $}}
+    \end{center}
+    \textcolor{White}{.}
+    \item Fonction de réaction (identique à celle du duopole de Cournot) : \newline
+    \textcolor{White}{.}
+    \begin{center}
+        \Large{\fbox{$
+        q_{2} = R_{2}(q_{1}) = \frac{A - c_{2} - q_{1}}{2}
+        $}}
+    \end{center}
+    \textcolor{White}{.}
+    \item L'entreprise 1 connaît la façon de réagir de l'entreprise 2 : \newline
+    \textcolor{White}{.}
+    \begin{center}
+        \Large{\fbox{$
+        max \pi_{1}(q_{1},q_{2}) = p(q_{1},q_{2})q_{1} - c_{1}q_{1}
+        $}}
+    \end{center}
+    Sachant que :
+    \begin{center}
+        \Large{\fbox{$
+        q_{2} = R_{2}(q_{1}) = \frac{A - c_{2} - q_{1}}{2}
+        $}}
+    \end{center}
+    \textcolor{White}{.}
+    \item Conditions de premier ordre : \newline
+    \textcolor{White}{.}
+    \begin{center}
+        \Large{\fbox{$
+        \frac{\partial \pi_{1}(q_{1},q_{2})}{\partial q_{1}} = 0
+        $}}
+    \end{center}
+\end{itemize}
+\newpage
+On a alors : 
+\begin{center}
+    \Large{\fbox{$
+    q_{1} = \frac{A - 2c_{1} + c_{2}}{2}
+    $}}
+    \Large{\fbox{$
+    q_{2} = \frac{A - 2c_{1} + c_{2}}{4}
+    $}}
+\end{center} 
+Les quantités produites par l'entreprise 2 étant anticipées par l'entreprise 1, \textbf{l'entreprise leader peut produire plus qu'en situation de duopole de Cournot tandis que l'entreprise 2 produit moins, ce qui souligne l'avantage qu'à l'entreprise 1 sur l'entreprise 2.}
+\newpage
 \subsection{Entente collusive ou cartel}
 Les entreprises peuvent envisager des ententes entre elles : elles forment un cartel qui se comporte comme un monopole avec plusieurs établissements et prix. \textbf{\Large{Le but est de maximiser la somme des profits des entreprises}}\newline
 Ce type d'entente \textbf{n'est pas stable} : il y a généralement des non-respects de ces ententes.
@@ -310,7 +375,7 @@ Ce type d'entente \textbf{n'est pas stable} : il y a généralement des non-resp
 \end{center}
 Conditions de premier ordre :
 \begin{center}
-   \fbox{\Large{$\forall i \in \{1,2\},$} \huge{$\frac{d\pi}{dq_{i}} = 0$}}
+   \fbox{\Large{$\forall i \in \{1,2\},$} \huge{$\frac{\partial \pi}{\partial q_{i}} = 0$}}
 \end{center}
 A l'équilibre : \Large{{$C_{m_{1}} = C_{m_{2}}$} \newline
 

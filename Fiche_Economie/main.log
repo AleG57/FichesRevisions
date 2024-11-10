@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.6)  9 NOV 2024 19:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.6)  10 NOV 2024 12:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -621,7 +621,7 @@ Overfull \hbox (1.77722pt too wide) in paragraph at lines 14--14
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 ...rt et à long terme}{12}{subsection.2.1.4}
+l.20 ...rt et à long terme}{11}{subsection.2.1.4}
                                                   % [1
 
 ] [2]
@@ -710,74 +710,93 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 18.
 
-<Pics/Elasticite_prix.png, id=467, 267.399pt x 282.45525pt>
-File: Pics/Elasticite_prix.png Graphic file (type png)
-<use Pics/Elasticite_prix.png>
-Package pdftex.def Info: Pics/Elasticite_prix.png  used on input line 31.
-(pdftex.def)             Requested size: 213.91948pt x 225.9645pt.
-[11 <./Pics/Elasticite_prix.png>]
-<Pics/elasticite_court_et_long_terme.png, id=474, 224.037pt x 169.23225pt>
+<Pics/elasticite_court_et_long_terme.png, id=467, 224.037pt x 169.23225pt>
 File: Pics/elasticite_court_et_long_terme.png Graphic file (type png)
 <use Pics/elasticite_court_et_long_terme.png>
-Package pdftex.def Info: Pics/elasticite_court_et_long_terme.png  used on input line 37.
+Package pdftex.def Info: Pics/elasticite_court_et_long_terme.png  used on input line 33.
 (pdftex.def)             Requested size: 224.03644pt x 169.23184pt.
- [12 <./Pics/elasticite_court_et_long_terme.png>]
-<Pics/elasticite_prix_croises.png, id=481, 323.40825pt x 157.7895pt>
+[11 <./Pics/elasticite_court_et_long_terme.png>]
+<Pics/elasticite_prix_croises.png, id=474, 323.40825pt x 157.7895pt>
 File: Pics/elasticite_prix_croises.png Graphic file (type png)
 <use Pics/elasticite_prix_croises.png>
-Package pdftex.def Info: Pics/elasticite_prix_croises.png  used on input line 50.
+Package pdftex.def Info: Pics/elasticite_prix_croises.png  used on input line 46.
 (pdftex.def)             Requested size: 258.72693pt x 126.23177pt.
- [13 <./Pics/elasticite_prix_croises.png>]
-Overfull \hbox (5.88914pt too wide) in paragraph at lines 54--55
+
+Overfull \hbox (5.88914pt too wide) in paragraph at lines 49--50
 []\OT1/cmr/m/n/14.4 C'est la me-sure de l'^^Sevolution du re-venu r^^Seel du consom-
  []
 
-[14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+[12 <./Pics/elasticite_prix_croises.png>] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-[16]
-<Pics/dyn_concu_parfaite.png, id=507, 375.20175pt x 211.992pt>
+[14]
+<Pics/dyn_concu_parfaite.png, id=497, 375.20175pt x 211.992pt>
 File: Pics/dyn_concu_parfaite.png Graphic file (type png)
 <use Pics/dyn_concu_parfaite.png>
-Package pdftex.def Info: Pics/dyn_concu_parfaite.png  used on input line 129.
+Package pdftex.def Info: Pics/dyn_concu_parfaite.png  used on input line 124.
 (pdftex.def)             Requested size: 300.16179pt x 169.59381pt.
 
-Overfull \hbox (12.73889pt too wide) in paragraph at lines 147--148
+Overfull \hbox (12.73889pt too wide) in paragraph at lines 142--143
 \OT1/cmr/m/n/14.4 Fonction ^^Ra ren-de-ment constant (fonc-tion de Cobb-Douglas) 
  []
 
-[17 <./Pics/dyn_concu_parfaite.png>]
-<Pics/surplus_consommateur.png, id=513, 361.35pt x 197.538pt>
+[15 <./Pics/dyn_concu_parfaite.png>]
+<Pics/surplus_consommateur.png, id=503, 361.35pt x 197.538pt>
 File: Pics/surplus_consommateur.png Graphic file (type png)
 <use Pics/surplus_consommateur.png>
-Package pdftex.def Info: Pics/surplus_consommateur.png  used on input line 162.
+Package pdftex.def Info: Pics/surplus_consommateur.png  used on input line 157.
 (pdftex.def)             Requested size: 289.0804pt x 158.0306pt.
- [18 <./Pics/surplus_consommateur.png>]
-Overfull \hbox (4.54147pt too wide) in paragraph at lines 169--170
+ [16 <./Pics/surplus_consommateur.png>]
+Overfull \hbox (4.54147pt too wide) in paragraph at lines 164--165
 []\OT1/cmr/bx/n/14.4 Bien ri-val \OT1/cmr/m/n/14.4 : deux agents ne peuvent pas en b^^Sen^^Seficier
  []
 
-<Pics/defaillance_marche.png, id=523, 387.24675pt x 152.36925pt>
+<Pics/defaillance_marche.png, id=512, 387.24675pt x 152.36925pt>
 File: Pics/defaillance_marche.png Graphic file (type png)
 <use Pics/defaillance_marche.png>
-Package pdftex.def Info: Pics/defaillance_marche.png  used on input line 180.
+Package pdftex.def Info: Pics/defaillance_marche.png  used on input line 175.
 (pdftex.def)             Requested size: 271.07086pt x 106.65773pt.
-[19 <./Pics/defaillance_marche.png>] [20]
-<Pics/Inefficience_monopole.png, id=539, 558.888pt x 193.32225pt>
+[17 <./Pics/defaillance_marche.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+[18]
+<Pics/Inefficience_monopole.png, id=529, 558.888pt x 193.32225pt>
 File: Pics/Inefficience_monopole.png Graphic file (type png)
 <use Pics/Inefficience_monopole.png>
-Package pdftex.def Info: Pics/Inefficience_monopole.png  used on input line 237.
+Package pdftex.def Info: Pics/Inefficience_monopole.png  used on input line 232.
 (pdftex.def)             Requested size: 391.21893pt x 135.32465pt.
 
-Overfull \hbox (46.21893pt too wide) in paragraph at lines 237--238
+Overfull \hbox (46.21893pt too wide) in paragraph at lines 232--233
  [] 
  []
 
-[21 <./Pics/Inefficience_monopole.png>]
-Overfull \hbox (9.50146pt too wide) in paragraph at lines 241--242
+[19 <./Pics/Inefficience_monopole.png>]
+Overfull \hbox (9.50146pt too wide) in paragraph at lines 236--237
 \OT1/cmr/m/n/14.4 r^^Sealit^^Se. En efft, il existe des ph^^Senom^^Renes d'in-terd^^Sependance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+
+ []
+
+
+Overfull \hbox (22.64766pt too wide) in paragraph at lines 238--240
+[][]\OT1/cmr/bx/n/14.4 Oligopole[] \OT1/cmr/m/n/14.4 : nombre li-mit^^Se de grandes en-tre-prises r^^Sealisant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
+
  []
 
 
@@ -786,28 +805,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--242
  []
 
 
-Overfull \hbox (22.64766pt too wide) in paragraph at lines 243--244
-[][]\OT1/cmr/bx/n/14.4 Oligopole[] \OT1/cmr/m/n/14.4 : nombre li-mit^^Se de grandes en-tre-prises r^^Sealisant
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+<Pics/Duopole_cournot.png, id=541, 395.67825pt x 185.493pt>
+File: Pics/Duopole_cournot.png Graphic file (type png)
+<use Pics/Duopole_cournot.png>
+Package pdftex.def Info: Pics/Duopole_cournot.png  used on input line 280.
+(pdftex.def)             Requested size: 316.54301pt x 148.39459pt.
+[21 <./Pics/Duopole_cournot.png>]
+Overfull \hbox (19.69637pt too wide) in paragraph at lines 307--308
+\OT1/cmr/bx/n/14.4 L'^^Sequilibre de Ber-trand m^^Rene au m^eme r^^Sesultats
  []
 
 [22]
-<Pics/Duopole_cournot.png, id=551, 395.67825pt x 185.493pt>
-File: Pics/Duopole_cournot.png Graphic file (type png)
-<use Pics/Duopole_cournot.png>
-Package pdftex.def Info: Pics/Duopole_cournot.png  used on input line 277.
-(pdftex.def)             Requested size: 316.54301pt x 148.39459pt.
- [23 <./Pics/Duopole_cournot.png>] [24]
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
 
  []
 
-<Pics/Matrice_des_decisions.png, id=563, 428.19975pt x 173.448pt>
+[23] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
+
+ []
+
+<Pics/Matrice_des_decisions.png, id=561, 428.19975pt x 173.448pt>
 File: Pics/Matrice_des_decisions.png Graphic file (type png)
 <use Pics/Matrice_des_decisions.png>
-Package pdftex.def Info: Pics/Matrice_des_decisions.png  used on input line 319.
+Package pdftex.def Info: Pics/Matrice_des_decisions.png  used on input line 384.
 (pdftex.def)             Requested size: 385.3762pt x 156.10175pt.
 
-Overfull \hbox (40.3762pt too wide) in paragraph at lines 319--320
+Overfull \hbox (40.3762pt too wide) in paragraph at lines 384--385
  [] 
  []
 
@@ -846,12 +879,12 @@ Overfull \hbox (30.5999pt too wide) in paragraph at lines 52--53
 []\OT1/cmr/m/n/14.4 Vision op-pos^^See ^^Ra Keynes (re-venu cou-rant). Les mon^^Setaristes
  []
 
-<Pics/Theorie_revenu_permanent.png, id=578, 540.21825pt x 301.125pt>
+<Pics/Theorie_revenu_permanent.png, id=576, 540.21825pt x 301.125pt>
 File: Pics/Theorie_revenu_permanent.png Graphic file (type png)
 <use Pics/Theorie_revenu_permanent.png>
 Package pdftex.def Info: Pics/Theorie_revenu_permanent.png  used on input line 56.
 (pdftex.def)             Requested size: 270.10846pt x 150.56212pt.
-<Pics/Pret_et_fond_de_depot.png, id=579, 498.06075pt x 320.397pt>
+<Pics/Pret_et_fond_de_depot.png, id=577, 498.06075pt x 320.397pt>
 File: Pics/Pret_et_fond_de_depot.png Graphic file (type png)
 <use Pics/Pret_et_fond_de_depot.png>
 Package pdftex.def Info: Pics/Pret_et_fond_de_depot.png  used on input line 61.
@@ -877,7 +910,7 @@ Overfull \hbox (2.52237pt too wide) in paragraph at lines 110--111
  []
 
 [31]
-<Pics/Financement_economie.png, id=607, 407.72325pt x 137.313pt>
+<Pics/Financement_economie.png, id=605, 407.72325pt x 137.313pt>
 File: Pics/Financement_economie.png Graphic file (type png)
 <use Pics/Financement_economie.png>
 Package pdftex.def Info: Pics/Financement_economie.png  used on input line 115.
@@ -933,7 +966,7 @@ Overfull \hbox (39.94542pt too wide) in paragraph at lines 73--74
  []
 
 [37]
-<Pics/Courbe_IS.png, id=642, 631.35875pt x 365.365pt>
+<Pics/Courbe_IS.png, id=640, 631.35875pt x 365.365pt>
 File: Pics/Courbe_IS.png Graphic file (type png)
 <use Pics/Courbe_IS.png>
 Package pdftex.def Info: Pics/Courbe_IS.png  used on input line 84.
@@ -943,7 +976,7 @@ Overfull \hbox (2.24838pt too wide) in paragraph at lines 84--85
 [][] 
  []
 
-<Pics/Courbe_LM.png, id=643, 585.18625pt x 341.275pt>
+<Pics/Courbe_LM.png, id=641, 585.18625pt x 341.275pt>
 File: Pics/Courbe_LM.png Graphic file (type png)
 <use Pics/Courbe_LM.png>
 Package pdftex.def Info: Pics/Courbe_LM.png  used on input line 88.
@@ -954,17 +987,17 @@ Overfull \hbox (6.11446pt too wide) in paragraph at lines 88--89
  []
 
 [38 <./Pics/Courbe_IS.png (PNG copy)> <./Pics/Courbe_LM.png (PNG copy)>]
-<Pics/Eq_IS_IM.png, id=651, 789.95125pt x 489.83pt>
+<Pics/Eq_IS_IM.png, id=649, 789.95125pt x 489.83pt>
 File: Pics/Eq_IS_IM.png Graphic file (type png)
 <use Pics/Eq_IS_IM.png>
 Package pdftex.def Info: Pics/Eq_IS_IM.png  used on input line 96.
 (pdftex.def)             Requested size: 236.9872pt x 146.95012pt.
-<Pics/Politque_expansioniste.png, id=652, 881.2925pt x 453.695pt>
+<Pics/Politque_expansioniste.png, id=650, 881.2925pt x 453.695pt>
 File: Pics/Politque_expansioniste.png Graphic file (type png)
 <use Pics/Politque_expansioniste.png>
 Package pdftex.def Info: Pics/Politque_expansioniste.png  used on input line 103.
 (pdftex.def)             Requested size: 176.25537pt x 90.73738pt.
-<Pics/Politique_budjetaire_restrictive.png, id=653, 903.375pt x 450.68375pt>
+<Pics/Politique_budjetaire_restrictive.png, id=651, 903.375pt x 450.68375pt>
 File: Pics/Politique_budjetaire_restrictive.png Graphic file (type png)
 <use Pics/Politique_budjetaire_restrictive.png>
 Package pdftex.def Info: Pics/Politique_budjetaire_restrictive.png  used on input line 104.
@@ -975,7 +1008,7 @@ Overfull \hbox (35.9272pt too wide) in paragraph at lines 102--107
  []
 
 [39 <./Pics/Eq_IS_IM.png (PNG copy)> <./Pics/Politque_expansioniste.png (PNG copy)> <./Pics/Politique_budjetaire_restrictive.png (PNG copy)>]
-<Pics/Carre_magique.png, id=660, 670.505pt x 431.6125pt>
+<Pics/Carre_magique.png, id=658, 670.505pt x 431.6125pt>
 File: Pics/Carre_magique.png Graphic file (type png)
 <use Pics/Carre_magique.png>
 Package pdftex.def Info: Pics/Carre_magique.png  used on input line 115.
@@ -991,7 +1024,7 @@ Overfull \hbox (38.21866pt too wide) in paragraph at lines 132--135
  []
 
 [41]
-<Pics/Solow_Samuelson.png, id=674, 999.735pt x 368.37625pt>
+<Pics/Solow_Samuelson.png, id=672, 999.735pt x 368.37625pt>
 File: Pics/Solow_Samuelson.png Graphic file (type png)
 <use Pics/Solow_Samuelson.png>
 Package pdftex.def Info: Pics/Solow_Samuelson.png  used on input line 174.
@@ -1002,7 +1035,7 @@ Overfull \hbox (54.88692pt too wide) in paragraph at lines 174--175
  []
 
 [42 <./Pics/Solow_Samuelson.png (PNG copy)>]
-<Pics/Critique_Friedman.png, id=681, 751.80875pt x 421.575pt>
+<Pics/Critique_Friedman.png, id=679, 751.80875pt x 421.575pt>
 File: Pics/Critique_Friedman.png Graphic file (type png)
 <use Pics/Critique_Friedman.png>
 Package pdftex.def Info: Pics/Critique_Friedman.png  used on input line 179.
@@ -1013,7 +1046,7 @@ Overfull \hbox (5.22237pt too wide) in paragraph at lines 181--182
  []
 
 [43 <./Pics/Critique_Friedman.png (PNG copy)>]
-<Pics/anticipation_rationnelle_philips.png, id=688, 462.72874pt x 332.24126pt>
+<Pics/anticipation_rationnelle_philips.png, id=686, 462.72874pt x 332.24126pt>
 File: Pics/anticipation_rationnelle_philips.png Graphic file (type png)
 <use Pics/anticipation_rationnelle_philips.png>
 Package pdftex.def Info: Pics/anticipation_rationnelle_philips.png  used on input line 187.
@@ -1141,21 +1174,21 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 315 ({)
+### simple group (level 1) entered at line 380 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 24249 strings out of 474116
- 442725 string characters out of 5750249
+ 24242 strings out of 474116
+ 442509 string characters out of 5750249
  1938187 words of memory out of 5000000
- 46008 multiletter control sequences out of 15000+600000
+ 46001 multiletter control sequences out of 15000+600000
  567791 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,87p,692b,728s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (56 pages, 1694518 bytes).
+Output written on main.pdf (56 pages, 1633061 bytes).
 PDF statistics:
- 893 PDF objects out of 1000 (max. 8388607)
+ 891 PDF objects out of 1000 (max. 8388607)
  754 compressed objects within 8 object streams
  182 named destinations out of 1000 (max. 500000)
- 752 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 747 words of extra memory for PDF output out of 10000 (max. 10000000)
 

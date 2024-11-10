@@ -340,11 +340,6 @@ INPUT ./Pics/Courbe_de_l_offre.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT ./Pics/Elasticite_prix.png
-INPUT ./Pics/Elasticite_prix.png
-INPUT ./Pics/Elasticite_prix.png
-INPUT ./Pics/Elasticite_prix.png
-INPUT ./Pics/Elasticite_prix.png
 INPUT ./Pics/elasticite_court_et_long_terme.png
 INPUT ./Pics/elasticite_court_et_long_terme.png
 INPUT ./Pics/elasticite_court_et_long_terme.png
