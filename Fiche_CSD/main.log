@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.6)  7 NOV 2024 21:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.6)  11 NOV 2024 10:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -581,7 +581,7 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [30pt].
 
-(./main.aux)
+(./main.aux (./Oraganisation_du_cours.aux) (./Chapitre1.aux) (./Chapitre2.aux) (./Chapitre3.aux) (./Chapitre4.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
@@ -611,10 +611,11 @@ Package french.ldf Warning: OT1 encoding should not be used for French.
 (french.ldf)                of your document; reported on input line 100.
 
 Package hyperref Info: Link coloring OFF on input line 100.
+(./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count337
 \scratchdimen=\dimen301
@@ -656,19 +657,33 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 102.
  (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-No file main.toc.
-\tf@toc=\write5
-\openout5 = `main.toc'.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
+Overfull \hbox (0.80606pt too wide) in paragraph at lines 24--24
+ [] [][]\OT1/cmr/bx/n/14.4 Repr^^Sesentation d'^^Setat, com-man-da-bi-lit^^Se, ob- 
+ []
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 \include{Oraganisation_du_cours}
-                                       [1
+l.24 ...ndabilité, observabilité}{17}{chapter.2}
+                                                  % [1
 
 ]
+Overfull \hbox (16.22232pt too wide) in paragraph at lines 41--41
+ [][] [][]\OT1/cmr/m/n/14.4 Stabilit^^Se Entr^^See Born^^See Sor-tie Born^^See 
+ []
+
+
+Overfull \hbox (13.45282pt too wide) in paragraph at lines 64--64
+ [] [][]\OT1/cmr/bx/n/14.4 Commande des syst^^Remes par ap-proche d'^^Setat[] []  
+ []
+
+[2] [3])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [4]
 \openout2 = `Oraganisation_du_cours.aux'.
 
 
@@ -697,7 +712,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[2
+[5
 
 
 
@@ -723,17 +738,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-[3] [4]
+[6] [7]
 Overfull \hbox (2.50964pt too wide) in paragraph at lines 93--93
 []\OT1/cmr/bx/n/14.4 Structure d'un syst^^Reme as-servi mo-no-va-riable 
  []
 
-<Pics/FTBF.png, id=43, 516.12825pt x 154.77824pt>
+<Pics/FTBF.png, id=435, 516.12825pt x 154.77824pt>
 File: Pics/FTBF.png Graphic file (type png)
 <use Pics/FTBF.png>
 Package pdftex.def Info: Pics/FTBF.png  used on input line 95.
 (pdftex.def)             Requested size: 412.90315pt x 123.82275pt.
-<Pics/assev2ndOrdre.png, id=45, 360.1455pt x 139.11975pt>
+<Pics/assev2ndOrdre.png, id=437, 360.1455pt x 139.11975pt>
 File: Pics/assev2ndOrdre.png Graphic file (type png)
 <use Pics/assev2ndOrdre.png>
 Package pdftex.def Info: Pics/assev2ndOrdre.png  used on input line 96.
@@ -743,7 +758,7 @@ Overfull \hbox (67.90315pt too wide) in paragraph at lines 95--97
  [] 
  []
 
-[5 <./Pics/FTBF.png> <./Pics/assev2ndOrdre.png>]
+[8 <./Pics/FTBF.png> <./Pics/assev2ndOrdre.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 116--119
 
  []
@@ -753,8 +768,8 @@ Overfull \hbox (59.88594pt too wide) in paragraph at lines 134--144
 []$\OT1/cmr/m/n/14.4 ^^A\OML/cmm/m/it/14.4 ^^^ \OT1/cmr/m/n/14.4 = [] \OMS/cmsy/m/n/14.4 ^^@ [] [] []$ 
  []
 
-[6]
-<Pics/rapidite_abaque.png, id=63, 539.616pt x 295.70474pt>
+[9]
+<Pics/rapidite_abaque.png, id=452, 539.616pt x 295.70474pt>
 File: Pics/rapidite_abaque.png Graphic file (type png)
 <use Pics/rapidite_abaque.png>
 Package pdftex.def Info: Pics/rapidite_abaque.png  used on input line 156.
@@ -764,7 +779,7 @@ Overfull \hbox (32.72862pt too wide) in paragraph at lines 156--157
  [] 
  []
 
-[7 <./Pics/rapidite_abaque.png>]
+[10 <./Pics/rapidite_abaque.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
@@ -779,12 +794,12 @@ Overfull \hbox (26.47855pt too wide) in paragraph at lines 168--169
 []\OT1/cmr/m/n/14.4 Plus $\OML/cmm/m/it/14.4 M^^^ \OMS/cmsy/m/n/14.4 %$\OT1/cmr/m/n/14.4 , plus la sta-bi-lit^^Se $\OMS/cmsy/m/n/14.4 %$ \OT1/cmr/m/n/14.4 avec [] 
  []
 
-<Pics/stab.png, id=72, 343.88475pt x 236.082pt>
+<Pics/stab.png, id=459, 343.88475pt x 236.082pt>
 File: Pics/stab.png Graphic file (type png)
 <use Pics/stab.png>
 Package pdftex.def Info: Pics/stab.png  used on input line 170.
 (pdftex.def)             Requested size: 299.17732pt x 205.38966pt.
-[8 <./Pics/stab.png>]
+[11 <./Pics/stab.png>]
 Overfull \hbox (27.32658pt too wide) in paragraph at lines 174--176
 []\OT1/cmr/m/n/12 Temps de la k-i^^Reme pseudo-p^^Seriode : Am-pli-tude du k-i^^Reme d^^Sepassement
  []
@@ -804,18 +819,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-[9]
-<Pics/Black.png, id=91, 624.53325pt x 361.95226pt>
+[12]
+<Pics/Black.png, id=477, 624.53325pt x 361.95226pt>
 File: Pics/Black.png Graphic file (type png)
 <use Pics/Black.png>
 Package pdftex.def Info: Pics/Black.png  used on input line 194.
 (pdftex.def)             Requested size: 187.36142pt x 108.5865pt.
- [10 <./Pics/Black.png>] [11]
+ [13 <./Pics/Black.png>] [14]
 Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
-<Pics/Nyquist.png, id=107, 572.73975pt x 210.7875pt>
+<Pics/Nyquist.png, id=488, 572.73975pt x 210.7875pt>
 File: Pics/Nyquist.png Graphic file (type png)
 <use Pics/Nyquist.png>
 Package pdftex.def Info: Pics/Nyquist.png  used on input line 231.
@@ -825,7 +840,7 @@ Overfull \hbox (55.91508pt too wide) in paragraph at lines 231--232
  [] 
  []
 
-[12 <./Pics/Nyquist.png>]
+[15 <./Pics/Nyquist.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 234.
@@ -834,7 +849,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 234.
 
-<Pics/TransformeeZ.png, id=115, 481.8pt x 140.32425pt>
+<Pics/TransformeeZ.png, id=494, 481.8pt x 140.32425pt>
 File: Pics/TransformeeZ.png Graphic file (type png)
 <use Pics/TransformeeZ.png>
 Package pdftex.def Info: Pics/TransformeeZ.png  used on input line 237.
@@ -844,7 +859,7 @@ Overfull \hbox (40.4405pt too wide) in paragraph at lines 237--238
  [] 
  []
 
-) [13 <./Pics/TransformeeZ.png>]
+) [16 <./Pics/TransformeeZ.png>]
 \openout2 = `Chapitre2.aux'.
 
  (./Chapitre2.tex
@@ -913,12 +928,12 @@ LaTeX Font Warning: Font shape `U/stmry/m/n' in size <0.7> not available
 LaTeX Font Warning: Font shape `U/stmry/m/n' in size <0.5> not available
 (Font)              size <5> substituted on input line 35.
 
-[14
+[17
 
 
 
 
-] [15]
+] [18]
 Overfull \hbox (20.43648pt too wide) in paragraph at lines 73--74
 []\OT1/cmr/m/n/17.28 On dit que le tri-plet $([]\OML/cmm/m/it/17.28 ; []; []\OT1/cmr/m/n/17.28 )$ est un point d'^^Sequilibre
  []
@@ -928,17 +943,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--105
 
  []
 
-
-LaTeX Warning: Reference `RepEtat_SLCI' on page 16 undefined on input line 107.
-
-[16]
-
-LaTeX Warning: Reference `RepEtat_SLDI' on page 17 undefined on input line 123.
-
-
-LaTeX Warning: Reference `RepEtat_SLDI' on page 17 undefined on input line 136.
-
-
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
@@ -948,8 +953,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
-[17]
-<Pics/Stabilite.png, id=169, 631.158pt x 220.4235pt>
+[20]
+<Pics/Stabilite.png, id=541, 631.158pt x 220.4235pt>
 File: Pics/Stabilite.png Graphic file (type png)
 <use Pics/Stabilite.png>
 Package pdftex.def Info: Pics/Stabilite.png  used on input line 148.
@@ -959,7 +964,7 @@ Overfull \hbox (33.69772pt too wide) in paragraph at lines 148--149
  [] 
  []
 
-[18 <./Pics/Stabilite.png>]
+[21 <./Pics/Stabilite.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 189--192
 
  []
@@ -969,24 +974,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--209
 
  []
 
-[19]
-
-LaTeX Warning: Reference `RepEtat_SLCI' on page 20 undefined on input line 218.
-
-
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
-
-
-LaTeX Warning: Reference `RepEtat_SLDI' on page 20 undefined on input line 226.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
-[20]
+[23]
 Overfull \hbox (60.75961pt too wide) in paragraph at lines 261--261
 []\OT1/cmr/bx/n/14.4 Passage de la fonc-tion de trans-fert ^^Ra la repr^^Sesentation
  []
@@ -996,7 +994,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
-[21]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
@@ -1026,118 +1024,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
  []
 
-[22] [23] [24]
+[25] [26] [27]
 Overfull \hbox (49.81682pt too wide) in paragraph at lines 429--430
 []\OT1/cmr/m/n/12 Un syst^^Reme est dit par-tiel-le-ment com-man-dable SII $\OML/cmm/m/it/12 rg\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Q[]\OT1/cmr/m/n/12 ) [] \OML/cmm/m/it/12 n; \OMS/cmsy/m/n/12 8\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/12 ) =
  []
 
-[25]
-./Chapitre2.tex:478: Missing $ inserted.
-<inserted text> 
-                $
-l.478             \]}}
-                      , $\forall p \in \mathbb{C}$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./Chapitre2.tex:478: Missing $ inserted.
-<inserted text> 
-                $
-l.478             \]}}
-                      , $\forall p \in \mathbb{C}$
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-./Chapitre2.tex:478: LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.478             \]}}
-                      , $\forall p \in \mathbb{C}$
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./Chapitre2.tex:489: Missing $ inserted.
-<inserted text> 
-                $
-l.489             \]}}
-                      , $\forall z \in \mathbb{C}$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./Chapitre2.tex:489: Missing $ inserted.
-<inserted text> 
-                $
-l.489             \]}}
-                      , $\forall z \in \mathbb{C}$
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-./Chapitre2.tex:489: LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.489             \]}}
-                      , $\forall z \in \mathbb{C}$
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 512--515
+[28] [29] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 514--517
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--536
+Underfull \hbox (badness 10000) in paragraph at lines 527--538
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 536--546
+Underfull \hbox (badness 10000) in paragraph at lines 538--548
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--558
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
 
  []
 
-) [27]
+) [31]
 \openout2 = `Chapitre3.aux'.
 
  (./Chapitre3.tex
 Chapitre 3.
-<Pics/SLI_Troubleshoot.png, id=262, 286.671pt x 208.3785pt>
+<Pics/SLI_Troubleshoot.png, id=632, 286.671pt x 208.3785pt>
 File: Pics/SLI_Troubleshoot.png Graphic file (type png)
 <use Pics/SLI_Troubleshoot.png>
 Package pdftex.def Info: Pics/SLI_Troubleshoot.png  used on input line 22.
 (pdftex.def)             Requested size: 186.33392pt x 135.4444pt.
-[28
+[32
 
 
 
 
  <./Pics/SLI_Troubleshoot.png>]
-<Pics/retour_etat.png, id=272, 381.425pt x 166.6225pt>
+<Pics/retour_etat.png, id=640, 381.425pt x 166.6225pt>
 File: Pics/retour_etat.png Graphic file (type png)
 <use Pics/retour_etat.png>
 Package pdftex.def Info: Pics/retour_etat.png  used on input line 27.
 (pdftex.def)             Requested size: 266.99567pt x 116.63495pt.
- [29 <./Pics/retour_etat.png>] [30]
+ [33 <./Pics/retour_etat.png>] [34]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 91.
@@ -1207,7 +1140,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--129
 
  []
 
-[31]
+[35]
 Overfull \hbox (7.27997pt too wide) in paragraph at lines 149--150
  [] 
  []
@@ -1217,25 +1150,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
-[32]
-<Pics/retour_etat_KC.png, id=312, 442.65375pt x 167.62625pt>
+[36]
+<Pics/retour_etat_KC.png, id=669, 442.65375pt x 167.62625pt>
 File: Pics/retour_etat_KC.png Graphic file (type png)
 <use Pics/retour_etat_KC.png>
 Package pdftex.def Info: Pics/retour_etat_KC.png  used on input line 194.
 (pdftex.def)             Requested size: 221.32632pt x 83.81291pt.
- [33 <./Pics/retour_etat_KC.png>]
-<Pics/Perturbations.png, id=322, 491.8375pt x 231.86626pt>
+ [37 <./Pics/retour_etat_KC.png>]
+<Pics/Perturbations.png, id=678, 491.8375pt x 231.86626pt>
 File: Pics/Perturbations.png Graphic file (type png)
 <use Pics/Perturbations.png>
 Package pdftex.def Info: Pics/Perturbations.png  used on input line 241.
 (pdftex.def)             Requested size: 245.91814pt x 115.93283pt.
- [34 <./Pics/Perturbations.png>]
-<Pics/suspension_magnetique.png, id=328, 345.29pt x 266.9975pt>
+ [38 <./Pics/Perturbations.png>]
+<Pics/suspension_magnetique.png, id=683, 345.29pt x 266.9975pt>
 File: Pics/suspension_magnetique.png Graphic file (type png)
 <use Pics/suspension_magnetique.png>
 Package pdftex.def Info: Pics/suspension_magnetique.png  used on input line 284.
 (pdftex.def)             Requested size: 172.5pt x 133.38841pt.
-<Pics/AN_suspension_magnetique.png, id=329, 143.53625pt x 192.72pt>
+<Pics/AN_suspension_magnetique.png, id=684, 143.53625pt x 192.72pt>
 File: Pics/AN_suspension_magnetique.png Graphic file (type png)
 <use Pics/AN_suspension_magnetique.png>
 Package pdftex.def Info: Pics/AN_suspension_magnetique.png  used on input line 290.
@@ -1245,7 +1178,7 @@ Overfull \hbox (68.99895pt too wide) in paragraph at lines 282--294
  [][][] 
  []
 
-[35 <./Pics/suspension_magnetique.png> <./Pics/AN_suspension_magnetique.png>] [36]
+[39 <./Pics/suspension_magnetique.png> <./Pics/AN_suspension_magnetique.png>] [40]
 Underfull \hbox (badness 10000) in paragraph at lines 407--409
 
  []
@@ -1260,17 +1193,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
-[37]
+[41]
 Overfull \hbox (29.80731pt too wide) detected at line 534
 [] [] \OT1/cmr/m/n/12 = [] [] + [] \OML/cmm/m/it/12 y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )
  []
 
-[38]
+[42]
 Overfull \hbox (29.80731pt too wide) detected at line 626
 [] [] \OT1/cmr/m/n/12 = [] [] + [] \OML/cmm/m/it/12 y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )
  []
 
-[39]
+[43]
 Underfull \hbox (badness 10000) in paragraph at lines 717--719
 
  []
@@ -1280,7 +1213,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 724--726
 
  []
 
-[40]
+[44]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 740.
@@ -1297,7 +1230,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 754.
 
-[41]
+[45]
 Overfull \hbox (8.54465pt too wide) in paragraph at lines 783--783
 []\OT1/cmr/bx/n/14.4 Modification des p^oles de la fonc-tion de trans-
  []
@@ -1307,17 +1240,17 @@ Overfull \hbox (19.14233pt too wide) in paragraph at lines 795--796
 []\OT1/cmr/m/n/12 Par iden-ti-fi-ca-tion, trou-ver les ^^Sel^^Sements de $\OML/cmm/m/it/12 K$ \OT1/cmr/m/n/12 (syst^^Reme d'^^Sequations)
  []
 
-[42] [43] [44]
+[46] [47] [48]
 Overfull \hbox (86.77736pt too wide) detected at line 937
 [] [] \OT1/cmr/m/n/12 = [] [] + [] []
  []
 
-<Pics/reglage1_LQ.png, id=408, 1242.6425pt x 556.0775pt>
+<Pics/reglage1_LQ.png, id=753, 1242.6425pt x 556.0775pt>
 File: Pics/reglage1_LQ.png Graphic file (type png)
 <use Pics/reglage1_LQ.png>
 Package pdftex.def Info: Pics/reglage1_LQ.png  used on input line 952.
 (pdftex.def)             Requested size: 310.65987pt x 139.01903pt.
-<Pics/reglage2_LQ.png, id=409, 1230.5975pt x 551.05875pt>
+<Pics/reglage2_LQ.png, id=754, 1230.5975pt x 551.05875pt>
 File: Pics/reglage2_LQ.png Graphic file (type png)
 <use Pics/reglage2_LQ.png>
 Package pdftex.def Info: Pics/reglage2_LQ.png  used on input line 953.
@@ -1327,13 +1260,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 952--954
 [][]
  []
 
-[45 <./Pics/reglage1_LQ.png (PNG copy)> <./Pics/reglage2_LQ.png (PNG copy)>]
-<Pics/commande_action_integrale.png, id=417, 616.3025pt x 236.885pt>
+[49 <./Pics/reglage1_LQ.png (PNG copy)> <./Pics/reglage2_LQ.png (PNG copy)>]
+<Pics/commande_action_integrale.png, id=760, 616.3025pt x 236.885pt>
 File: Pics/commande_action_integrale.png Graphic file (type png)
 <use Pics/commande_action_integrale.png>
 Package pdftex.def Info: Pics/commande_action_integrale.png  used on input line 959.
 (pdftex.def)             Requested size: 308.1505pt x 118.4422pt.
- [46 <./Pics/commande_action_integrale.png (PNG copy)>]
+ [50 <./Pics/commande_action_integrale.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 1057--1058
 
  []
@@ -1363,18 +1296,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1079--1080
 
  []
 
-) [47]
+) [51]
 \openout2 = `Chapitre4.aux'.
 
  (./Chapitre4.tex
 Chapitre 4.
-[48
+[52
 
 
 
 
 ]
-<Pics/observateur_chap4.png, id=438, 559.08875pt x 166.6225pt>
+<Pics/observateur_chap4.png, id=776, 559.08875pt x 166.6225pt>
 File: Pics/observateur_chap4.png Graphic file (type png)
 <use Pics/observateur_chap4.png>
 Package pdftex.def Info: Pics/observateur_chap4.png  used on input line 40.
@@ -1384,7 +1317,7 @@ Overfull \hbox (46.35945pt too wide) in paragraph at lines 40--41
 [][] 
  []
 
-) [49 <./Pics/observateur_chap4.png (PNG copy)>] (./main.aux (./Oraganisation_du_cours.aux) (./Chapitre1.aux) (./Chapitre2.aux) (./Chapitre3.aux) (./Chapitre4.aux))
+) [53 <./Pics/observateur_chap4.png (PNG copy)>] (./main.aux (./Oraganisation_du_cours.aux) (./Chapitre1.aux) (./Chapitre2.aux) (./Chapitre3.aux) (./Chapitre4.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1394,20 +1327,8 @@ L3 programming layer <2024-02-20>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.5pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D9DDF2110D62D73C1448239B20C52209;13892.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D9DDF2110D62D73C1448239B20C52209;13892.
  )
 (\end occurred inside a group at level 13)
 
@@ -1416,8 +1337,8 @@ Package rerunfilecheck Info: Checksums for `main.out':
 ### simple group (level 11) entered at line 245 ({)
 ### simple group (level 10) entered at line 218 ({)
 ### simple group (level 9) entered at line 199 ({)
-### simple group (level 8) entered at line 514 ({)
-### simple group (level 7) entered at line 495 ({)
+### simple group (level 8) entered at line 516 ({)
+### simple group (level 7) entered at line 497 ({)
 ### simple group (level 6) entered at line 363 ({)
 ### simple group (level 5) entered at line 353 ({)
 ### simple group (level 4) entered at line 342 ({)
@@ -1426,18 +1347,18 @@ Package rerunfilecheck Info: Checksums for `main.out':
 ### simple group (level 1) entered at line 236 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 26474 strings out of 474116
- 481754 string characters out of 5750249
- 1941187 words of memory out of 5000000
- 48201 multiletter control sequences out of 15000+600000
+ 26579 strings out of 474116
+ 483302 string characters out of 5750249
+ 1942187 words of memory out of 5000000
+ 48283 multiletter control sequences out of 15000+600000
  575521 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,87p,477b,1300s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,87p,519b,1300s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary8.pfb>
-Output written on main.pdf (50 pages, 1108344 bytes).
+Output written on main.pdf (54 pages, 1120419 bytes).
 PDF statistics:
- 614 PDF objects out of 1000 (max. 8388607)
- 472 compressed objects within 5 object streams
- 192 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 954 PDF objects out of 1000 (max. 8388607)
+ 804 compressed objects within 9 object streams
+ 198 named destinations out of 1000 (max. 500000)
+ 695 words of extra memory for PDF output out of 10000 (max. 10000000)
 
