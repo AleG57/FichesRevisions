@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.6)  9 NOV 2024 20:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.11)  13 NOV 2024 00:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -576,7 +576,7 @@ LaTeX Info: Redefining \Xbar on input line 69.
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count336
 \l__pdf_internal_box=\box69
-) (./main.aux (./Seance1.aux))
+) (./main.aux (./Seance1.aux) (./Seance2.aux) (./Seance3.aux) (./annexe1.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
@@ -656,14 +656,19 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 10
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.23 ... entre loi et réglement}{14}{section.2.7}
+l.20 ...ely supply contract}{15}{subsection.2.4.4}
                                                   % [1
 
-])
+]
+Overfull \hbox (3.86432pt too wide) in paragraph at lines 22--22
+ [][] [][]\OT1/cmr/m/n/17.28 La n^^Sec^^Sessit^^Se d'^^Sevolution dans l'appr^^Seciation 
+ []
+
+[2])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2]
+ [3]
 \openout2 = `Seance1.aux'.
 
  (./Seance1.tex
@@ -678,7 +683,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[3
+[4
 
 
 ]
@@ -686,7 +691,7 @@ Overfull \hbox (5.6114pt too wide) in paragraph at lines 16--17
 []\OT1/cmr/bx/n/14.4 Le droit com-mer-cial \OT1/cmr/m/n/14.4 : concerne les ac-ti-vit^^Ses ^^Seconomiques,
  []
 
-<Pics/Pyramide_de_Kelsen.png, id=139, 1039.885pt x 707.64375pt>
+<Pics/Pyramide_de_Kelsen.png, id=239, 1039.885pt x 707.64375pt>
 File: Pics/Pyramide_de_Kelsen.png Graphic file (type png)
 <use Pics/Pyramide_de_Kelsen.png>
 Package pdftex.def Info: Pics/Pyramide_de_Kelsen.png  used on input line 21.
@@ -696,117 +701,254 @@ Overfull \hbox (25.94662pt too wide) in paragraph at lines 21--22
 [][] 
  []
 
-[4 <./Pics/Pyramide_de_Kelsen.png (PNG copy)>]
-<Pics/Bloc_de_constitutionnalite.png, id=147, 1176.395pt x 806.01125pt>
+[5 <./Pics/Pyramide_de_Kelsen.png (PNG copy)>]
+<Pics/Bloc_de_constitutionnalite.png, id=247, 1176.395pt x 806.01125pt>
 File: Pics/Bloc_de_constitutionnalite.png Graphic file (type png)
 <use Pics/Bloc_de_constitutionnalite.png>
 Package pdftex.def Info: Pics/Bloc_de_constitutionnalite.png  used on input line 33.
 (pdftex.def)             Requested size: 352.92123pt x 241.80524pt.
- [5 <./Pics/Bloc_de_constitutionnalite.png (PNG copy)>]
+ [6 <./Pics/Bloc_de_constitutionnalite.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
-<Pics/Institutions_UE.png, id=155, 1289.81876pt x 710.655pt>
+<Pics/Institutions_UE.png, id=256, 1289.81876pt x 710.655pt>
 File: Pics/Institutions_UE.png Graphic file (type png)
 <use Pics/Institutions_UE.png>
 Package pdftex.def Info: Pics/Institutions_UE.png  used on input line 43.
 (pdftex.def)             Requested size: 386.94861pt x 213.19814pt.
-[6 <./Pics/Institutions_UE.png (PNG copy)>] [7]
+[7 <./Pics/Institutions_UE.png (PNG copy)>])
+\openout2 = `Seance2.aux'.
+
+ (./Seance2.tex
 Chapitre 2.
+<Pics/marche_de_l_electricite_avant_liberalisation.png, id=262, 994.71625pt x 437.635pt>
+File: Pics/marche_de_l_electricite_avant_liberalisation.png Graphic file (type png)
+<use Pics/marche_de_l_electricite_avant_liberalisation.png>
+Package pdftex.def Info: Pics/marche_de_l_electricite_avant_liberalisation.png  used on input line 5.
+(pdftex.def)             Requested size: 397.87946pt x 175.05089pt.
+
+Overfull \hbox (7.87946pt too wide) in paragraph at lines 5--6
+[][] 
+ []
+
 [8
 
+
+
+
+ <./Pics/marche_de_l_electricite_avant_liberalisation.png (PNG copy)>]
+<Pics/Stand_alone_model.png, id=268, 413.545pt x 354.32375pt>
+File: Pics/Stand_alone_model.png Graphic file (type png)
+<use Pics/Stand_alone_model.png>
+Package pdftex.def Info: Pics/Stand_alone_model.png  used on input line 14.
+(pdftex.def)             Requested size: 289.4795pt x 248.02492pt.
+ [9 <./Pics/Stand_alone_model.png (PNG copy)>]
+<Pics/Fully_integrated_model.png, id=275, 534.99875pt x 412.54124pt>
+File: Pics/Fully_integrated_model.png Graphic file (type png)
+<use Pics/Fully_integrated_model.png>
+Package pdftex.def Info: Pics/Fully_integrated_model.png  used on input line 21.
+(pdftex.def)             Requested size: 374.49657pt x 288.7769pt.
+
+Overfull \hbox (3.4311pt too wide) in paragraph at lines 18--23
+[]\OT1/cmr/m/n/14.4 Services pu-blics enti^^Rerement int^^Segr^^Ses. L'op^^Serateur as-sure toute
+ []
+
+[10 <./Pics/Fully_integrated_model.png (PNG copy)>]
+<Pics/ordre_de_merite.png, id=282, 696.6025pt x 377.41pt>
+File: Pics/ordre_de_merite.png Graphic file (type png)
+<use Pics/ordre_de_merite.png>
+Package pdftex.def Info: Pics/ordre_de_merite.png  used on input line 28.
+(pdftex.def)             Requested size: 348.3004pt x 188.70453pt.
+<Pics/dereglement_prix_elec.png, id=283, 1210.5225pt x 607.26875pt>
+File: Pics/dereglement_prix_elec.png Graphic file (type png)
+<use Pics/dereglement_prix_elec.png>
+Package pdftex.def Info: Pics/dereglement_prix_elec.png  used on input line 32.
+(pdftex.def)             Requested size: 423.68922pt x 212.54724pt.
+
+Overfull \hbox (33.68922pt too wide) in paragraph at lines 32--33
+ [][] 
+ []
+
+[11 <./Pics/ordre_de_merite.png (PNG copy)> <./Pics/dereglement_prix_elec.png (PNG copy)>]
+<Pics/fiscalite_et_surprofits.png, id=290, 1363.0925pt x 651.43375pt>
+File: Pics/fiscalite_et_surprofits.png Graphic file (type png)
+<use Pics/fiscalite_et_surprofits.png>
+Package pdftex.def Info: Pics/fiscalite_et_surprofits.png  used on input line 37.
+(pdftex.def)             Requested size: 408.93091pt x 195.43163pt.
+
+Overfull \hbox (18.93091pt too wide) in paragraph at lines 37--38
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+<Pics/principe_art_54.png, id=292, 1322.9425pt x 586.19pt>
+File: Pics/principe_art_54.png Graphic file (type png)
+<use Pics/principe_art_54.png>
+Package pdftex.def Info: Pics/principe_art_54.png  used on input line 47.
+(pdftex.def)             Requested size: 396.88582pt x 175.85835pt.
+
+Overfull \hbox (6.88582pt too wide) in paragraph at lines 47--48
+ [][] 
+ []
+
+[12{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Pics/fiscalite_et_surprofits.png (PNG copy)> <./Pics/principe_art_54.png (PNG copy)>] [13]
+<Pics/CFD_fonctionnement.png, id=310, 1178.4025pt x 470.75874pt>
+File: Pics/CFD_fonctionnement.png Graphic file (type png)
+<use Pics/CFD_fonctionnement.png>
+Package pdftex.def Info: Pics/CFD_fonctionnement.png  used on input line 76.
+(pdftex.def)             Requested size: 416.09718pt x 166.22621pt.
+
+Overfull \hbox (26.09718pt too wide) in paragraph at lines 76--77
+ [][] 
+ []
+
+
+Overfull \hbox (3.65671pt too wide) in paragraph at lines 79--80
+\OT1/cmr/m/n/14.4 Le four-nis-seur s'en-gage ^^Ra pro-duire une cer-taine quan-tit^^Se d'^^Senergie
+ []
+
+[14 <./Pics/CFD_fonctionnement.png (PNG copy)>]
+<Pics/PPA_physique_et_PPA_financier.png, id=317, 1238.6275pt x 630.355pt>
+File: Pics/PPA_physique_et_PPA_financier.png Graphic file (type png)
+<use Pics/PPA_physique_et_PPA_financier.png>
+Package pdftex.def Info: Pics/PPA_physique_et_PPA_financier.png  used on input line 83.
+(pdftex.def)             Requested size: 437.36281pt x 222.5801pt.
+
+Overfull \hbox (47.36281pt too wide) in paragraph at lines 83--84
+ [][] 
+ []
+
+[15 <./Pics/PPA_physique_et_PPA_financier.png (PNG copy)>]
+Overfull \hbox (15.57376pt too wide) in paragraph at lines 93--93
+[]\OT1/cmr/bx/n/17.28 La n^^Sec^^Sessit^^Se d'^^Sevolution dans l'appr^^Seciation
+ []
+
+<Pics/evolution_contrat_long_terme.png, id=326, 1160.335pt x 445.665pt>
+File: Pics/evolution_contrat_long_terme.png Graphic file (type png)
+<use Pics/evolution_contrat_long_terme.png>
+Package pdftex.def Info: Pics/evolution_contrat_long_terme.png  used on input line 96.
+(pdftex.def)             Requested size: 406.12334pt x 155.98508pt.
+
+Overfull \hbox (16.12334pt too wide) in paragraph at lines 96--97
+ [][] 
+ []
+
+) [16 <./Pics/evolution_contrat_long_terme.png (PNG copy)>]
+\openout2 = `Seance3.aux'.
+
+ (./Seance3.tex
+Chapitre 3.
+[17
+
+
+
+
+]) [18]
+\openout2 = `annexe1.aux'.
+
+ (./annexe1.tex
+Chapitre 4.
+[19
+
+
+
+
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
 
-Overfull \hbox (8.4809pt too wide) in paragraph at lines 81--82
+Overfull \hbox (8.4809pt too wide) in paragraph at lines 32--33
 []\OT1/cmr/bx/n/14.4 Trait^^Se sur le Fonc-tion-ne-ment de l'Union Eu-rop^^Seenne
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
 
-Overfull \hbox (9.87523pt too wide) in paragraph at lines 88--90
+Overfull \hbox (9.87523pt too wide) in paragraph at lines 39--41
 []\OT1/cmr/m/n/14.4 Les ^^Setats membres de l'UE peuvent par-ta-ger leurs Comp^^Setences
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
-[11]
-Overfull \hbox (26.4148pt too wide) in paragraph at lines 117--118
+[22]
+Overfull \hbox (26.4148pt too wide) in paragraph at lines 68--69
 \OT1/cmr/m/n/14.4 d'acc^^Res au r^^Seseau pour les ^^Sechanges trans-fron-ta-liers d'^^Selectricit^^Se 
  []
 
 
-Overfull \hbox (7.80844pt too wide) in paragraph at lines 122--123
+Overfull \hbox (7.80844pt too wide) in paragraph at lines 73--74
 []\OT1/cmr/m/n/14.4 R^^Reglement 713/2009 du 13 juillet 2009 ins-ti-tuant une agence
  []
 
 
-Overfull \hbox (26.4148pt too wide) in paragraph at lines 123--124
+Overfull \hbox (26.4148pt too wide) in paragraph at lines 74--75
 \OT1/cmr/m/n/14.4 d'acc^^Res au r^^Seseau pour les ^^Sechanges trans-fron-ta-liers d'^^Selectricit^^Se 
  []
 
-[12]
-Overfull \hbox (2.2101pt too wide) in paragraph at lines 128--129
+[23]
+Overfull \hbox (2.2101pt too wide) in paragraph at lines 79--80
 \OT1/cmr/m/n/14.4 mo-tion de l'^^Selectricit^^Se pro-duite ^^Ra par-tir de sources d'^^Senergie
  []
 
 
-Overfull \hbox (34.8331pt too wide) in paragraph at lines 134--135
+Overfull \hbox (34.8331pt too wide) in paragraph at lines 85--86
 []\OT1/cmr/m/n/14.4 Directive 2010/31 du 19 mai 2010 sur la per-for-mance ^^Senerg^^Setique
  []
 
 
-Overfull \hbox (8.4351pt too wide) in paragraph at lines 139--140
+Overfull \hbox (8.4351pt too wide) in paragraph at lines 90--91
 []\OT1/cmr/m/n/14.4 Directive 2003/87 du 13 oc-tobre 2003 ^^Setablissant un syst^^Reme
  []
 
-[13] [14]) [15] (./main.aux (./Seance1.aux))
+[24] [25]) [26] (./main.aux (./Seance1.aux) (./Seance2.aux) (./Seance3.aux) (./annexe1.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6BEFCE75D761A72F773665ECF0D14D27;4045.
+(rerunfilecheck)             Checksum: F37534AA00B80D75C0B14AF829EA2789;8625.
  ) 
 Here is how much of TeX's memory you used:
- 26066 strings out of 474116
- 473849 string characters out of 5750249
- 1934187 words of memory out of 5000000
- 47967 multiletter control sequences out of 15000+600000
- 566906 words of font info for 71 fonts, out of 8000000 for 9000
+ 26287 strings out of 474116
+ 479188 string characters out of 5750248
+ 1936187 words of memory out of 5000000
+ 48116 multiletter control sequences out of 15000+600000
+ 568096 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,7n,87p,512b,703s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on main.pdf (16 pages, 1086114 bytes).
+ 84i,8n,87p,679b,703s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on main.pdf (27 pages, 1857583 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
- 206 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
- 204 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 449 PDF objects out of 1000 (max. 8388607)
+ 383 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 398 words of extra memory for PDF output out of 10000 (max. 10000000)
 

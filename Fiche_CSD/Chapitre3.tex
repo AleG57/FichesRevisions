@@ -33,9 +33,10 @@
     \dot x(t) = Ax(t) + Bu(t)
     $}} \newline 
     
-    Avec : $x \in R^{n}, u(t) \in R^{m}$
+    Avec : $x \in \mathbb{R}^{n}, u(t) \in \mathbb{R}$
 \end{center}
-\large{En boucle fermée, la commande par retour d'état impose $ u(t) = -Kx(t) + e(t)$. Il vient :}
+\large{En boucle fermée, la commande par retour d'état impose \newline
+$ u(t) = -Kx(t) + e(t)$, $e \in \mathbb{R}$. Il vient :}
 \begin{center}
     \fbox{\LARGE{$
     \dot x(t) = (A - BK)x(t) + Be(t)
@@ -48,9 +49,10 @@
     x[k+1] = Fx[k] + Gu[k]
     $}} \newline 
     
-    Avec : $x \in R^{n}, u[k] \in R^{m}$
+    Avec : $x \in \mathbb{R}^{n}, u[k] \in \mathbb{R}$
 \end{center}
-\large{En boucle fermée, la commande par retour d'état impose $ u[k] = -Kx[k] + e[k]$. Il vient :}
+\large{En boucle fermée, la commande par retour d'état impose \newline
+$ u[k] = -Kx[k] + e[k]$, $e \in \mathbb{R}$. Il vient :}
 \begin{center}
     \fbox{\LARGE{$
     x[k+1] = (F - GK)x[k] + Be[k]
@@ -59,7 +61,7 @@
 \newpage
 \section{Calcul du retour d'état par placement des pôles}
 \large{C'est le cacul de $K$ en choisissant les valeurs propres de $F - GK$. D'après le \textcolor{BrickRed}{théorème de Wonham : il existe une matrice K tq pour tout choix de valeurs propres SSI le système est totalement commandable.} \newline
-(i.e. $\exists K \in M_{n}(R)$, on peut choisir les $\lambda_{i} \in S_{p}(A - BK)$ SII $\forall \lambda \in S_{p}(A), Re(\lambda) 0$)}
+(i.e. $\exists K \in M_{n}(\mathbb{R})$, on peut choisir les $\lambda_{i} \in S_{p}(A - BK)$ SII $\forall \lambda \in S_{p}(A), Re(\lambda) 0$)}
 \subsection{Cas continu}
 \begin{center}
     \fbox{\Large{$
@@ -416,7 +418,7 @@ Le vecteur d'état s'écrit :
         \[
         Q_{c} = 
         \begin{bmatrix}
-            A & AB & A^{2}B
+            B & AB & A^{2}B
         \end{bmatrix}
         =
         \begin{bmatrix}
@@ -636,7 +638,7 @@ Grâce à la fonction \texttt{place} de Matlab (par \textbf{identification}):
     \end{bmatrix}
     \]
 \end{center}
-En régime permanent :
+A l'équilibre
 \begin{center}
     \[
     \begin{bmatrix}
@@ -651,9 +653,9 @@ En régime permanent :
         20             & 1600       & 0
     \end{bmatrix}
     \begin{bmatrix}
-        i_{1}(t) \\
-        z(t) \\
-        \dot{z}(t)    
+        \overline{i_{1}} \\
+        \overline{z} \\
+        \overline{\dot{z}}   
     \end{bmatrix}
     +
     \begin{bmatrix}
@@ -679,8 +681,9 @@ Soit :
 \[
     \left \{
     \begin{array}{c @{=} c}
+        \overline{k_{c}} = \frac{1000+100k_{1}\overline{i_{1}} + 100k_{2}\overline{z} + 100k_{3}\overline{\dot{z}}}{100y_{c}} \\
         \overline{\dot{z}} & 0 \\
-        \overline{i_{1}} & -80\overline{z}\\
+        \overline{y_{c}} & -\overline{z}\\
         \overline{V_{z}} & 4000 \overline{z} = - \frac{4000k_{c}}{800 +80k_{1}-k_{2}}\overline{y_{c}} 
     \end{array}
     \right.
@@ -688,8 +691,10 @@ Soit :
 Or on veut que l'érreur statique soit nulle ($\epsilon_{s} = 0$). On a alors : 
 \begin{center}
     \LARGE{$
-    -\frac{4000k_{c}}{800 +80k_{1}-k_{2}} = 1 \Longleftrightarrow k_{c} = -\frac{800 +80k_{1}-k_{2}}{4000} = 2.125
-    $}
+    -\frac{4000k_{c}}{800 + 80k_{1}-k_{2}} = 1 \Longleftrightarrow k_{c} = -\frac{800 +80k_{1}-k_{2}}{4000} = 2.125
+    $} 
+    \textcolor{white}{.}\newline
+    \footnote{justifiable par le théorème de la valeur finale, on veut finalement que $\frac{S(p)}{E(p)}=1$}
 \end{center}
 \newpage
 \section{Commande par retour d'état des systèmes partiellment commandables}
@@ -831,23 +836,26 @@ A COMPLETER
 \end{center}
 \large{Avec : $Q^{T} = Q$ et $R^{T} = R$}
 \subsection{Solution}
-$\exists$ une solution $(A,B)$ \textbf{stabilisable}, $(H,A)$ \textbf{détectable} avec $H$ tel que $Q = H^{T}H$, $P^{T} = P$ unique solution positive de \textbf{l'équation algébrique de Riccati} : 
+$\exists$ une solution $(A,B)$ \textbf{stabilisable}, $(H,A)$ \textbf{détectable} avec $H$ tel que $Q = H^{T}H$, la matrice $P^{T} = P$ unique solution positive de \textbf{l'équation algébrique de Riccati} : 
 \begin{center}
     \Large{\fbox{$
     PA + A^{T}P - PBR^{-1}B^{T}P + Q = 0_{n}
     $}}
 \end{center}
-\large{tel qu'on a la solution :}
+\large{tel qu'on ai :}
 \begin{center}
     \Large{\fbox{$
-    u(t) = -Kx(t) = -R^{-1}B^{T}P
+    K = -R^{-1}B^{T}P
     $}}
 \end{center}
 Avec :
 \begin{center}
-    \Large{\fbox{$
+    \Large{$
     \dot{x}(t) = Ax(t) + Bu(t)
-    $}} en boucle ouverte
+    $} en boucle ouverte
+    \Large{{$
+    u(t) = -Kux(t)
+    $}} en boucle fermée
 \end{center}
 \newpage
 \begin{itemize}
@@ -859,6 +867,11 @@ Avec :
         \begin{itemize}
             \item \textcolor{BrickRed}{Si éléments de $Q$ $\nearrow$, Rapidité $\nearrow$}
             \item \textcolor{BrickRed}{Si éléments de $R$ $\nearrow$, Rapidité $\searrow$} 
+        \end{itemize}
+        \begin{itemize}
+            \item \textcolor{BrickRed}{Si éléments de $Q$ $\nearrow$, Stabilité $\nearrow$}
+            \item \textcolor{BrickRed}{Si éléments de $R$ $\nearrow$, Stabilité $\nearrow$} 
+            \item \textcolor{BrickRed}{Attention : si le rapport $\frac{Q}{R}$ est trop élevé, stabilité $\searrow$}
         \end{itemize}
     \end{itemize}
 \end{itemize}

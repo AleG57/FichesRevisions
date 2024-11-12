@@ -1,26 +1,46 @@
 \babel@toc {french}{}\relax 
-\contentsline {chapter}{\numberline {1}Les normes et le raisonnement juridique}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Hiérarchie des normes}{3}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Définition}{3}{subsection.1.1.1}%
-\contentsline {section}{\numberline {1.2}Les normes}{5}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Bloc constitutionnel}{5}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Bloc conventionnel}{6}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Bloc}{7}{subsection.1.2.3}%
-\contentsline {chapter}{\numberline {2}Annexe sur les institutions de l'UE et ses principes}{8}{chapter.2}%
-\contentsline {section}{\numberline {2.1}L'UE et ses institutions}{9}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Principe de subsidiarité}{11}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Compétences partagées}{11}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Principe de solidarité}{12}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Exemple : La concurrence du secteur de l'électricité en Europe}{12}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Ouverture à la concurrence}{12}{subsection.2.5.1}%
-\contentsline {subsubsection}{1er paquet}{12}{section*.5}%
-\contentsline {subsubsection}{2ème paquet}{12}{section*.6}%
-\contentsline {subsubsection}{3ème paquet}{12}{section*.7}%
-\contentsline {subsection}{\numberline {2.5.2}Le développement des EnR}{13}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}L'éfficacité énergétique}{13}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.5.4}Lutte contre les GES}{13}{subsection.2.5.4}%
-\contentsline {section}{\numberline {2.6}Un découpage en 4 parties}{13}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Différence entre loi et réglement}{14}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Nature}{14}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Processus d'élaboration}{14}{subsection.2.7.2}%
-\contentsline {subsection}{\numberline {2.7.3}Portée}{14}{subsection.2.7.3}%
+\contentsline {chapter}{\numberline {1}Les normes et le raisonnement juridique}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Hiérarchie des normes}{4}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Définition}{4}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Les normes}{6}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Bloc constitutionnel}{6}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Bloc conventionnel}{7}{subsection.1.2.2}%
+\contentsline {chapter}{\numberline {2}Les contrats vus à travers l'énergie}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Le Fonctionnement des marchés de gros de l'électricité}{8}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}L’organisation de l’opérateur historique avant la libéralisation}{8}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Les business models}{9}{subsection.2.1.2}%
+\contentsline {subsubsection}{Stand alone model}{9}{section*.6}%
+\contentsline {subsubsection}{Fully Integrated Utilities}{10}{section*.8}%
+\contentsline {section}{\numberline {2.2}La crise des prix pour le marché de gros de l'électricité}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Fiscalité en market design}{13}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Les contrats long terme}{14}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Les CFD (contract for difference)}{14}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Les PPA (Power Purchase Agreement)}{14}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Risk sharing contract}{15}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Purely supply contract}{15}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Liquidité des marchés de gros}{16}{section.2.5}%
+\contentsline {section}{\numberline {2.6}La nécéssité d'évolution dans l'appréciation des contrats long terme pour la Comission}{16}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Les grandes tendances du droit}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Les contentieux climatiques}{17}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}L’affaire Grande-Synthe}{17}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Le conseil d'état}{17}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Les sections consultatives}{18}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}La section du contentieux}{18}{subsection.3.1.4}%
+\contentsline {chapter}{\numberline {4}Annexe sur les institutions de l'UE et ses principes}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}L'UE et ses institutions}{20}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Principe de subsidiarité}{22}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Compétences partagées}{22}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Principe de solidarité}{23}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Exemple : La concurrence du secteur de l'électricité en Europe}{23}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Ouverture à la concurrence}{23}{subsection.4.5.1}%
+\contentsline {subsubsection}{1er paquet}{23}{section*.17}%
+\contentsline {subsubsection}{2ème paquet}{23}{section*.18}%
+\contentsline {subsubsection}{3ème paquet}{23}{section*.19}%
+\contentsline {subsection}{\numberline {4.5.2}Le développement des EnR}{24}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}L'éfficacité énergétique}{24}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Lutte contre les GES}{24}{subsection.4.5.4}%
+\contentsline {section}{\numberline {4.6}Un découpage en 4 parties}{24}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Différence entre loi et réglement}{25}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Nature}{25}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Processus d'élaboration}{25}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Portée}{25}{subsection.4.7.3}%
