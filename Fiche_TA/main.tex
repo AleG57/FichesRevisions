@@ -1,23 +1,59 @@
-\documentclass[30pt,french]{report}
+\documentclass[12pt,french]{report}
 
 % This is the main framework I use for my LateX documents.
-% main.tex by Alexis GRACIAS
+% main.tex by Alexis GRACIAS, last modification 21 November, 2024
 
-%%%%%%%%%%%%%
-% LIBRARIES %
-%%%%%%%%%%%%%
+%%%%%%%%%%%%
+% PACKAGES %
+%%%%%%%%%%%%
+
+% GEOMETRY
+
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+% LANGUAGE
 
 \usepackage{babel}
+
+% REFERENCES
+
 \usepackage{hyperref} % Add links to the table of content, files and website
+
+% GRAPHS
+
+\usepackage{tikz} % Graph package
+
+% IMAGES
+
 \usepackage{graphicx} % Required for inserting images
 \usepackage{tabto}
+
+% COLOR
+
+\usepackage[skins,theorems]{tcolorbox} % Frame color package
+\usepackage{amssymb}
 \usepackage[dvipsnames]{xcolor} % Text color package and more colors
-\usepackage{tikz} % Graph package
-\usepackage{pdfpages}
+
+% Custom colors
+\definecolor{ao}{rgb}{0.0, 0.0, 1.0}
+\definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
+\definecolor{cyan}{rgb}{0.0, 1.0, 1.0}
+\definecolor{glaucous}{rgb}{0.38, 0.51, 0.71}
+\definecolor{electricultramarine}{rgb}{0.25, 0.0, 1.0}
+
+
+% CAPTIONS
+
 \usepackage{caption}
 \usepackage{subcaption}
-%\usepackage[demo]{graphicx}
 \usepackage[utf8]{inputenc}
+
+% OTHER
+
+\usepackage{pdfpages}
+
+% MATH
+
 \usepackage{amsmath,amsfonts,mathtools,stmaryrd} % Math libraries
 
 \usepackage{listings} % required for specific languages
@@ -70,6 +106,27 @@
   \mathpalette\@Xbar{}%
 }
 
+% THEOREMS
+
+\tcbuselibrary{theorems} 
+\newtcbtheorem
+  []% init options
+  {definition}% name
+  {Definition}% title
+  {%
+    colback=electricultramarine!5,
+    colframe=electricultramarine!35!black,
+    fonttitle=\bfseries,
+  }% options
+  {def}% prefix
+
+% FORMULAS
+
+\tcbset{highlight math style={enhanced,
+  colframe=red,colback=white,arc=0pt,boxrule=1pt}}
+
+% CUSTOM COMMANDS
+
 \newcommand*{\@Xbar}[2]{%
   % #1: math style
   % #2: unused (empty)
@@ -99,7 +156,9 @@
 % Document
 \begin{document}
 \maketitle
-\Large \tableofcontents
+\large \tableofcontents
+
+\normalsize
 
 %%%%%%%%%%%
 % INCLUDE %
@@ -107,6 +166,7 @@
 
 \include{Chapitre1}
 
+\include{Annexe1}
 \include{Bibliographie}
 
 \end{document}

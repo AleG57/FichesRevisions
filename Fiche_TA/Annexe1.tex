@@ -1,0 +1,47 @@
+\chapter*{Annexe 1 : démonstration de la fonction d'ondes}
+\label{Annexe 1}
+On considère \eqref{eq 2} \newline
+
+Pour un fluide, la pression $P$ est fonction de la masse volumique $\rho$ tel que : $P = f(\rho)$ \newline
+
+En se placant dans un milieu homogène constitué uniquement d'air, que l'on approxime comme un gaz parfait, on a, à l'équilibre, on a : $P_{0} = f(\rho_{0})$ \newline
+
+La variation de pression $P_{e}$ due à la source sonore s'exprime de la manière suivante : $P_{e} =  f(\rho_{e})$ 
+\footnote{Evidement $P_{e}$ est très petite devant $P_{0}$ (pour le développement de Taylor) et $P = P_{0} + P_{e} = P_{0} + k\rho_{e}$, $\rho = \rho_{0} + \rho_{e}$} \newline
+
+On a finalement : 
+\begin{align}
+    P &= P_{0} +  P_{e} \nonumber \\
+        &= f(\rho_{0} + \rho_{e}) \nonumber \\
+    P   &\approx f(\rho_{0}) + \rho_{e}f'(\rho_{0}) \nonumber
+\end{align}
+On considère maintenant \eqref{eq 1} \newline
+
+On se place au repos ($t=0$) \newline
+
+\begin{itemize}
+    \item La position $x$ sur une ligne de courant du fluide s'exprime sous la forme : $\psi (x,t)$. \newline
+    \item La position voisine située en $x + dx$ s'exprime sous la forme : $\psi(x + dx,t)$. \newline
+    \item La quantité de fluide par unité de surface est définie de la sorte : $\rho_{0}dx$. Avec $dx$ infinitésimal.
+\end{itemize}
+On obtient : 
+\begin{equation}
+    \psi(x + dx,t) - \psi(x,t) = \frac{\partial \psi}{\partial x}dx \Longleftrightarrow \rho_{0}dx = \rho(\frac{\partial \psi}{\partial x}dx + dx) \nonumber
+\end{equation}
+Comme $\rho_{e}$ négligeable devant $\rho_{0}$, on obtient : 
+\begin{equation}
+    \rho_{e} = - \rho_{0}\frac{\partial \psi}{\partial x} \nonumber
+\end{equation}
+\newpage
+On considère enfin \eqref{eq 3} \newline
+
+On prend une portion du fluide de longueur $dx$. Sa masse est $\rho_{0}dx$ et son accélération $\frac{\partial^{2} \psi}{\partial t^{2}}$. \newline
+
+De plus, on a : 
+\begin{equation}
+    P_{e}(x,t) - P_{e}(x + dx,t) = \frac{\partial P}{\partial x}dx = -\frac{\partial P_{e}}{\partial x}dx \nonumber
+\end{equation}
+Soit : 
+\begin{eqnarray}
+    \rho_{0}\frac{\partial^{2} \psi}{\partial t^{2}} = - \frac{\partial P_{e}}{\partial x}\nonumber
+\end{eqnarray}

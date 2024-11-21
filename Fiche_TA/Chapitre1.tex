@@ -6,7 +6,6 @@
     \item \textbf{Psychoacoustique} \footnote{Remarque : on peut tromper l'ouie comme la vue, avec des sons appelés \textbf{sons de Risset}} : étude de la relation entre les vibrations des ondes sonores et sa perception.\newline
     \item \textbf{Les modèles de production} permettent de caractériser les osurces dans la nature.
 \end{itemize}
-\newpage
 \subsection{Histoire des sens} \footnote{D'après Ch. Sherrington (1857-1952)}
 \begin{itemize}
     \item Les sens \textit{introseptifs} : sensations qui vienne des entrailles du corps (estomac, coeur, malaise, aise...)
@@ -24,11 +23,12 @@
                 \end{itemize}
             \item Sens par contact indirect
                 \begin{itemize}
-                    \item Vue
-                    \item Ouie
+                    \item \textit{Vue}
+                    \item \textit{Ouie}
                 \end{itemize}
         \end{itemize}
 \end{itemize}
+\newpage
 \subsection{Lois des sens (18ème - 19ème)}
 \begin{itemize}
     \item \textbf{Loi du sens} : il existe pour chaque sens une intensité minima du stimulus, appelée intensité liminaire, au-dessous de laquelle il n'y a pas de sensation
@@ -36,13 +36,10 @@
         \begin{itemize}
             \item Forme a. \newline
             Il existe un rapport constant entre l'intensité du stimulus initial et la variation minima qu'il faut lui faire subir pour que la différence soit sentie
-            \newpage
             \item Forme b. \newline
             Pour que la sensation subisse des accroissements en progression arithmétique (0, 1, 2...), il faut faire varier le stimulus en progression géométrique (a, a2, a3...) ; le rapport constant est le seuil liminaire. C'est encore la loi logarithmique, ou loi de Fechner
         \end{itemize}
 \end{itemize}
-\subsection{Limite de ces lois}
-Les lois citées précédement ne sont valables que pour les \textit{stimulus moyens} et ne prennent pas en compte l'effet subjectif de la conscience : ne prend pas en compte l'effet des paramètres extérieurs
 \newpage
 \section{Stimulus auditif : le son}
 \subsection{Qu'est-ce que le son ?}
@@ -53,3 +50,91 @@ C'est la sensation perçue par l'oreille. Variation périodique de la pression d
     \item Vibrations de faible amplitude
     \item Transformations des fluides supposés adiabatiques réversibles
 \end{itemize}
+\subsection{Equation d'ondes unidimensionnelle}
+Equation de propagation des ondes électro-magnétiques :
+\begin{equation}
+    \large
+    \tcbhighmath[fuzzy halo=0.5mm with electricultramarine!35!electricultramarine,arc=2pt,
+    boxrule=0pt,frame hidden]{ 
+        \frac{\partial^{2} \psi}{\partial t^{2}} = c_{s}^{2}\frac{\partial^{2} \psi}{\partial x^{2}}
+     } \nonumber
+    \normalsize
+\end{equation}
+et : 
+\begin{equation}
+    \label{eq 1}
+    \rho_{e} = -\rho_{0}\frac{\partial \psi }{\partial x}  
+\end{equation}
+\begin{equation}
+    \label{eq 2}
+    P_{e} = c_{s}^{2}\rho_{e}
+\end{equation}
+\begin{equation}
+    \label{eq 3}
+    \rho_{0} \frac{\partial^{2} \psi}{\partial t^{2}} = -\frac{\partial P_{e}}{\partial x}
+\end{equation}
+Ce qui devient pour l'équation d'ondes sonores :
+\begin{equation}
+    \Large
+    \tcbhighmath[fuzzy halo=0.5mm with electricultramarine!35!electricultramarine,arc=2pt,
+    boxrule=0pt,frame hidden]{ 
+        \frac{\partial^{2} P_{e}}{\partial t^{2}} = \frac{1}{c_{s}^{2}}\frac{\partial^{2} P_{e}}{\partial x^{2}}
+     } \nonumber
+    \normalsize
+\end{equation}
+\vfil
+\begin{equation}
+    \large
+    \tcbhighmath[fuzzy halo=0.5mm with electricultramarine!35!electricultramarine,arc=2pt,
+    boxrule=0pt,frame hidden]{ 
+        c_{s} = 331,4\sqrt{1+\frac{T}{T_{0}}}
+     } \nonumber
+    \normalsize
+\end{equation}
+\vfill
+\begin{center}
+    \small{Pour démonstration voir annexe \ref{Annexe 1}}
+\end{center}
+\newpage
+\subsection{Equation d'ondes en tridimensionnel}
+L'équation d'ondes s'écrit à l'aide du d'Alembertien : 
+\begin{definition}{D'Alembertien}{d'Alembertien}
+    \[ \Xi = \nabla^{2} - \frac{1}{c_{2}^{2}}\frac{\partial^{2}}{\partial t^{2}} \] Avec  : \[ \Xi P_{e} = 0 \]
+\end{definition}
+Soit :
+\begin{equation}
+    \large
+    \tcbhighmath[fuzzy halo=0.5mm with electricultramarine!35!electricultramarine,arc=2pt,
+    boxrule=0pt,frame hidden]{ 
+        \nabla^{2}P_{e} - \frac{1}{c_{2}^{2}}\frac{\partial^{2} P_{e}}{\partial t^{2}} = 0 \nonumber
+     } \nonumber
+    \normalsize
+\end{equation}
+Avec : \newline
+\large
+\begin{itemize}
+    \item $\nabla^{2}\psi = \Delta \psi = \frac{\partial^{2} \psi}{\partial x^{2}} + \frac{\partial^{2} \psi}{\partial y^{2}} + \frac{\partial^{2} \psi}{\partial z^{2}} + \frac{\partial^{2} \psi}{\partial t^{2}}$ \newline
+    \item $\psi$ : fonction d'onde (électromagnétique) \newline
+    \item $c_{s}$ : célérité du son dans l'air en $m.s^{-1}$ ($c_{s} \approx 340 m.s^{-1}$) \newline
+    \item $P_{e}$ : pression acoustique en $Pa$ \newline
+    \item $T$ : température en $C$ \newline
+    \item $T_{0} = 273 C$
+\end{itemize}
+\normalsize
+\vfil
+Quelques rappels : 
+
+\begin{equation}
+    \normalsize
+    \tcbhighmath[fuzzy halo=0.5mm with electricultramarine!35!electricultramarine,arc=2pt,
+    boxrule=0pt,frame hidden]{ 
+        \lambda = cT = \frac{c}{f}
+     } \nonumber
+    \normalsize
+\end{equation}
+\begin{itemize}
+    \item $c$ : célérité de la lumière ($c = 3.10^{8} m.s^{-1}$)
+    \item $T$ : période en $s$
+    \item $f$ : fréquence en $Hz$
+\end{itemize}
+\newpage
