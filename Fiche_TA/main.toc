@@ -1,0 +1,10 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{\numberline {1}Les sons - Modèle de perception}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Définitions}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Histoire des sens}{3}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Lois des sens (18ème - 19ème)}{3}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Limite de ces lois}{4}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}Stimulus auditif : le son}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Qu'est-ce que le son ?}{5}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Hypothèses du cours}{5}{subsection.1.2.2}%
