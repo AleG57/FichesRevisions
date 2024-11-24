@@ -7,5 +7,18 @@
 \contentsline {section}{\numberline {1.2}Stimulus auditif : le son}{4}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Qu'est-ce que le son ?}{4}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Hypothèses du cours}{4}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Equation d'ondes unidimensionnelle}{4}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Equation d'ondes en tridimensionnel}{5}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}Equation d'ondes}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Unidimensionnel}{4}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Tridimensionnel}{5}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Solutions de l'équation d'ondes}{6}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Solution pour une onde plane progressive monochromatique (OPPM)}{6}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Solution pour une onde stationnaire}{6}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Ondes stationnaires pour deux parois rigides}{6}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Ondes stationnaires pour deux parois molles}{6}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Ondes stationnaires pour une paroi molle et une paroi rigide}{7}{subsection.1.4.5}%
+\contentsline {section}{\numberline {1.5}Un peu d'anatomie}{7}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Représentation des "capteurs" de l'Homme}{7}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Influx nerveux}{7}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Phénomène acoustique des sensations}{8}{subsection.1.5.3}%
+\contentsline {section}{\numberline {1.6}Onde Plane Progressive Monochromatique}{13}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Onde stationnaire}{13}{section.1.7}%
