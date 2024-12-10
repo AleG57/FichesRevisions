@@ -173,6 +173,10 @@
 │   ├── Bibliographie.tex
 │   ├── Chapitre1.aux
 │   ├── Chapitre1.tex
+│   ├── Chapitre2.aux
+│   ├── Chapitre2.tex
+│   ├── Introduction.aux
+│   ├── Introduction.tex
 │   ├── main.aux
 │   ├── main.fdb_latexmk
 │   ├── main.fls
@@ -188,12 +192,14 @@
 │   │   ├── Cochlee.png
 │   │   ├── conv_position_freq.png
 │   │   ├── Courbe_isosonie.png
+│   │   ├── Enveloppe.png
 │   │   ├── Loi_du_Seuil.png
 │   │   ├── Oreille.png
 │   │   ├── Perception_bpm.png
 │   │   └── Transmission_Information_chez_lH.png
 │   ├── Rappels.aux
-│   └── Rappels.tex
+│   ├── Rappels.tex
+│   └── Scripts
 ├── Fiche_TmdC
 │   ├── Chapitre1.aux
 │   ├── Chapitre1.tex
@@ -213,11 +219,12 @@
 │       └── System_communication.png
 └── README.md
 
-12 directories, 198 files
+13 directories, 203 files
 ```
 
 ## Recent Git Log
 ```
+587ab99 speed commit usage
 c8290dc adding spanish cheatsheet
 ab32f6d adding Theorie Moderne du Codage
 297637e add more accurate decorations
@@ -227,7 +234,6 @@ ab32f6d adding Theorie Moderne du Codage
 7eef9d0 adding chapter 6 and 7 on Economie
 8df86af fixing presentation
 d4795a3 Fixing partial derivative and Stackelberg
-43ae81c fixing README.md
 ```
 
 ## Git Push URL

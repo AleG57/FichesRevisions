@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.11)  1 DEC 2024 19:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.4)  8 DEC 2024 21:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -965,18 +965,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: DFADDF59046A780AC7BFCFAD61452591;5589.
  ) 
 Here is how much of TeX's memory you used:
- 30311 strings out of 474116
- 577966 string characters out of 5750248
+ 30306 strings out of 474116
+ 577911 string characters out of 5750249
  1950187 words of memory out of 5000000
- 52118 multiletter control sequences out of 15000+600000
- 569308 words of font info for 80 fonts, out of 8000000 for 9000
+ 52114 multiletter control sequences out of 15000+600000
+ 568999 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,11n,107p,499b,808s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (16 pages, 88268 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (16 pages, 80005 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
- 251 compressed objects within 3 object streams
+ 277 PDF objects out of 1000 (max. 8388607)
+ 248 compressed objects within 3 object streams
  59 named destinations out of 1000 (max. 500000)
  253 words of extra memory for PDF output out of 10000 (max. 10000000)
 

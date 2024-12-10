@@ -1,24 +1,34 @@
 \babel@toc {french}{}\relax 
-\contentsline {chapter}{\numberline {1}Les sons - Modèle de perception}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Définitions}{2}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Histoire des sens}{2}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Lois des sens (18ème - 19ème)}{3}{subsection.1.1.3}%
-\contentsline {section}{\numberline {1.2}Stimulus auditif : le son}{4}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Qu'est-ce que le son ?}{4}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Hypothèses du cours}{4}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Equation d'ondes}{4}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Unidimensionnel}{4}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Tridimensionnel}{5}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}Solutions de l'équation d'ondes}{6}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Solution pour une onde plane progressive monochromatique (OPPM)}{6}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Solution pour une onde stationnaire}{6}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Ondes stationnaires pour deux parois rigides}{6}{subsection.1.4.3}%
-\contentsline {subsection}{\numberline {1.4.4}Ondes stationnaires pour deux parois molles}{6}{subsection.1.4.4}%
-\contentsline {subsection}{\numberline {1.4.5}Ondes stationnaires pour une paroi molle et une paroi rigide}{7}{subsection.1.4.5}%
-\contentsline {section}{\numberline {1.5}Un peu d'anatomie}{7}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Représentation des "capteurs" de l'Homme}{7}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Influx nerveux}{7}{subsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.5.3}Phénomène acoustique des sensations}{8}{subsection.1.5.3}%
-\contentsline {section}{\numberline {1.6}Onde Plane Progressive Monochromatique}{13}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Onde stationnaire}{13}{section.1.7}%
+\contentsline {chapter}{\numberline {1}Les sons - Modèle de perception}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{4}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Définitions}{4}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Histoire des sens}{4}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Loi des sens (18ème - 19ème)}{5}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Stimulus auditif : le son}{6}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Qu'est-ce que le son ?}{6}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Hypothèses du cours}{6}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Equation d'ondes}{6}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Unidimensionnel}{6}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Tridimensionnel}{7}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Solutions de l'équation d'ondes}{8}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Solution pour une onde plane progressive monochromatique (OPPM)}{8}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Solution pour une onde stationnaire}{8}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Ondes stationnaires pour deux parois rigides}{8}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Ondes stationnaires pour deux parois molles}{8}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Ondes stationnaires pour une paroi molle et une paroi rigide}{9}{subsection.1.4.5}%
+\contentsline {section}{\numberline {1.5}Un peu d'anatomie}{9}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Représentation des "capteurs" de l'Homme}{9}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Influx nerveux}{9}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.6}Psychoacoustique}{10}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Modèles de perception}{12}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Modèle de sonie}{12}{subsection.1.7.1}%
+\contentsline {chapter}{\numberline {2}Analyse spectrale paramétrique}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Incertitude de Gabor}{14}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Modèles auto-régressifs}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Modèle ARMA}{14}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Modèle AR - AR, auto-régressifs}{14}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Levinson-Durbin - Yule-Walker}{15}{subsection.2.2.3}%
+\contentsline {subsubsection}{Fonction de transfert}{15}{section*.9}%
+\contentsline {subsubsection}{Equations de Yule-Walker}{15}{section*.10}%
+\contentsline {section}{\numberline {2.3}Onde Plane Progressive Monochromatique}{20}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Onde stationnaire}{20}{section.2.4}%
