@@ -1,0 +1,132 @@
+\chapter{Topologie}
+\section{Espaces vectoriels normés}
+Dans toute la suite du chapitre, on notera $\mathbb{K}$ l'ensemble $\mathbb{R}$ ou $\mathbb{C}$.
+\begin{definition}{Espace vectoriel normé}{Espace vectoriel normé}
+    Un K-espace vectoriel $E$ est dit normé si il est muni d'une norme, c'est-à-dire d'une application $\mathcal{N} : E \rightarrow \mathbb{R}^{+}$ qui satisfait les conditions suivantes :
+    \begin{itemize}
+        \item \textbf{Séparation}
+        \begin{equation}
+            \forall x \in E, \mathcal{N}(x)=0 \implies x = 0_{E} \nonumber
+        \end{equation} 
+        \item \textbf{Homogénéité}
+        \begin{equation}
+            \forall (x,\lambda) \in E \times \mathbb{R}, \mathcal{N}(\lambda x) = |\lambda|\mathcal{N}(x) \nonumber
+        \end{equation} 
+        \item \textbf{Sous-additivité (inégalité triangulaire)}
+        \begin{equation}
+            \forall (x,y) \in E^{2}, \mathcal{N}(x+y) < \mathcal{N}(x)\mathcal{N}(y) \nonumber
+        \end{equation} 
+    \end{itemize}
+\end{definition}
+La \textbf{norme euclidienne d'ordre p} dans $\mathbb{R}^{n}$ :
+\begin{equation}
+    \large
+    \tcbhighmath[fuzzy halo=0.5mm with electricultramarine!35!electricultramarine,arc=2pt,
+    boxrule=0pt,frame hidden]{ 
+        ||x||_{p} = \sqrt[p]{\sum_{k=1}^{n}|x_{p}|^{p}} = (\sum_{k=1}^{n}|x_{p}|^{p})^{\frac{1}{p}}
+     }
+    \normalsize
+\end{equation}
+avec 
+\[ x = 
+\begin{bmatrix}
+    x_{1} & x_{2} & ... & x_{n}
+\end{bmatrix}
+^{T}
+\]
+ou $T$ désigne l'opérateur transpose dans $\mathbb{R}^{n}$. De plus, on définit la \textbf{norme infinie} :
+\begin{equation}
+    \large
+    \tcbhighmath[fuzzy halo=0.5mm with electricultramarine!35!electricultramarine,arc=2pt,
+    boxrule=0pt,frame hidden]{ 
+        ||x||_{\infty} = max\{ x_{1}, x_{2}, ..., x_{n}\}
+     }
+    \normalsize
+\end{equation}
+\newpage
+\section{Espaces métrique}
+\begin{definition}{Espace métrique}{Espace métrique}
+    On note $(E,d)$ un espace métrique ($E$ ensemble et $d$ la distance définie pour tout éléments de $E$). C'est un espace vectoriel au sein duquel la notion de distance est bien définie pour tout éléments de $E$. L'application $d$ satisfait les conditions suivantes :
+    \begin{itemize}
+        \item \textbf{Symétrie}
+        \begin{equation}
+            \forall (x,y) \in E^{2}, d(x,y) = d(y,x) \nonumber
+        \end{equation} 
+        \item \textbf{Séparation}
+        \begin{equation}
+            \forall (x,y) \in E^{2}, d(x,y) = 0 \Longleftrightarrow x = y \nonumber
+        \end{equation} 
+        \item \textbf{Inégalité triangulaire}
+        \begin{equation}
+            \forall (x,y,z) \in E^{3}, d(x,y) < d(x,z) + d(z,y) \nonumber
+        \end{equation} 
+    \end{itemize}
+\end{definition}
+\section{Ouverts, fermés, boules}
+\begin{definition}{Boules}{Boules}
+    Pour un espace métrique $(X,d)$, on définit :
+    \begin{itemize}
+        \item \textbf{Boule ouverte, centre $x$, rayon $r > 0$}
+        \begin{equation}
+            B(x,r) = \{ y \in X, d(x,y) < r\}
+        \end{equation} 
+        \item \textbf{Boule fermée, centre $x$, rayon $r \ge 0$}
+        \begin{equation}
+            B(x,r) = \{ y \in X, d(x,y) \le r\}
+        \end{equation} 
+        \item \textbf{Sphère de centre $x$, rayon $r$}
+        \begin{equation}
+            S(x,r) = \{ y \in X, d(x,y) = r\}
+        \end{equation} 
+    \end{itemize}
+\end{definition}
+Propriétés sur les ouverts et fermés. Pour $(X,d)$ un espace métrique : \newline
+\begin{itemize}
+    \item \textbf{Une réunion quelconque d'ouverts est un ouvert} \newline
+    \item \textbf{Une intersection finie d'ouverts est un ouvert} \newline
+    \item \textbf{Une intersection suelconque de fermés est un fermé} \newline
+    \item \textbf{Une intersection finie de fermés est un fermé} \newline
+    \item \textbf{Une partie $F$ de $X$ est un fermés si son complémentaire $F^{c}$ est ouvert}
+\end{itemize}
+\newpage
+\section{Intérieur - Adhérence}
+\begin{definition}{Intérieur}{Intérieur}
+    Pour un espace métrique $(X,d)$, soit $A$ une partie de $X$. \newline
+
+    \noindent $x \in X$ est un point \textbf{intérieur} de $A$ $\Longleftrightarrow \exists r > 0, B(x,r) \subset A$ \newline
+
+    On note $\r{A}$ l'ensemble des points intérieurs de $A$ : c'est le plus grand ouvert contenu dans $A$
+\end{definition}
+\begin{definition}{Adhérence}{Adhérence}
+    Pour un espace métrique $(X,d)$, soit $A$ une partie de $X$. \newline
+
+    \noindent $x \in X$ est un point \textbf{adhérent} de $A$ $\Longleftrightarrow \exists r > 0, B(x,r) \cap A \neq \emptyset$ \newline
+
+    On note $\overline{A}$ l'ensemble des points adhérents de $A$ : c'est le plus petit fermé contenant $A$.
+\end{definition}
+\begin{definition}{Frontière}{Frontière}
+    Pour un espace métrique $(X,d)$, soit $A$ une partie de $X$. \newline
+
+    \noindent On appelle \textbf{frontière de $A$} l'ensemble $\overline{A}  \backslash \r{A}$
+\end{definition}
+Propriétés sur les intérieurs et adhérences : \newline
+\begin{itemize}
+    \item $A$ est ouvert $\Longleftrightarrow$ $A = \r{A}$ \newline
+    \item $A$ est fermé $\Longleftrightarrow$ $A = \overline{A}$
+\end{itemize}
+\section{Suites}
+Pour toute la suite, on considère $(X,d)$ un espace métrique.
+\begin{definition}{Convergence de suites}{Convergence de suites}
+        Une suite $(x_{n})_{n \in \mathbb{N}} \in X$ converge vers $l \in X$  \newline
+                                        
+        \noindent $\Longleftrightarrow \forall \epsilon > 0, \exists n_{0}, \forall n > n_{0}, d(x_{n},l) \le \epsilon $
+\end{definition}
+On note alors $\lim_{n \longrightarrow +\infty} x_{n} = l$
+\begin{definition}{Suites extraites}{Suites extraites}
+    Soit $(x_{n})_{n \in \mathbb{N}}$ une suite de $X$. On appelle \textbf{sous-suite} ou \textbf{suite extraite} de $(x_{n})_{n \in \mathbb{N}}$ toute suite de la forme $(x_{\varphi (n)})_{n \in \mathbb{N}}$ tel que l'application $\varphi : \mathbb{N} \longrightarrow \mathbb{N}$ est \textbf{strictement croissante} 
+\end{definition}
+\newpage
+Propriétés pour les suites $(x_{n})_{n \in \mathbb{N}} \in X$ \newline
+\begin{itemize}
+    \item 
+\end{itemize}

@@ -3,6 +3,20 @@
 ## Directory Structure
 ```
 .
+├── Fiche_CIP
+│   ├── Chapitre1.aux
+│   ├── Chapitre1.tex
+│   ├── Introduction.aux
+│   ├── Introduction.tex
+│   ├── main.aux
+│   ├── main.fdb_latexmk
+│   ├── main.fls
+│   ├── main.log
+│   ├── main.out
+│   ├── main.pdf
+│   ├── main.synctex.gz
+│   ├── main.tex
+│   └── main.toc
 ├── Fiche_CSD
 │   ├── Chapitre1.aux
 │   ├── Chapitre1.tex
@@ -216,14 +230,16 @@
 │   ├── main.tex
 │   ├── main.toc
 │   └── Pics
+│       ├── Shanon.png
 │       └── System_communication.png
 └── README.md
 
-13 directories, 203 files
+14 directories, 217 files
 ```
 
 ## Recent Git Log
 ```
+5644063 adding content and fixing issues
 587ab99 speed commit usage
 c8290dc adding spanish cheatsheet
 ab32f6d adding Theorie Moderne du Codage
@@ -233,7 +249,6 @@ ab32f6d adding Theorie Moderne du Codage
 1320946 fixing bugs on chapter 2, CSD
 7eef9d0 adding chapter 6 and 7 on Economie
 8df86af fixing presentation
-d4795a3 Fixing partial derivative and Stackelberg
 ```
 
 ## Git Push URL

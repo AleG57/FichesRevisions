@@ -110,31 +110,41 @@
     \end{tikzpicture}
 \end{center}
 \newpage
+\section{Transformée de Fourrier continue}
+
+\section{Transformée de Fourrier discrète}
+
+\newpage
 \section{Estimation}
 \subsection{Notions et définitions de base}
-\noindent On cherche à reconstituer un signal $\underline{x}$ ou $\underline{\theta}$ à partir de son observation, le vecteur $\underline{y}$. On cherche alors une fonction $\widehat{\theta}$ tel que $x \circ y = \widehat{\theta}(\underline{y})$ soit la meilleure estimation de $\underline{\theta}$. \newline
+\noindent On cherche à reconstituer un signal aléatoire $\underline{x}$ ou $\underline{\theta}$ à partir de son observation, le vecteur $\underline{y}$. Par conséquent, les éléments $y_{i}$ du vecteur d'observation $\underline{y}$ sont des \textbf{VA} sur un espace probabilisé. On cherche alors une fonction $\widehat{\theta}$ tel que $x \circ y = \widehat{x}(\underline{y})$ soit la meilleure estimation de $\underline{x}$.
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[scale=0.425]{Pics/Shanon.png}
+    \caption{Modèle de transmission de Shanon}
+\end{figure}
 
 \noindent Mathématiquement, on a : 
-\[ \underline{\theta} = 
+\[ \underline{x} = 
 \begin{bmatrix}
-    \theta_{0} & \theta_{1} & ... & \theta_{n} 
+    x{0} & x_{1} & ... & x_{n} 
 \end{bmatrix}
-, (\theta_{i})_{i \in \mathbb{N}} \in G
+\in G
 \]
 \[ \underline{y} = 
 \begin{bmatrix}
     y_{0} & y_{1} & ... & y_{n} 
 \end{bmatrix}
-, (y_{i})_{i \in \mathbb{N}} \in F
+\in F
 \]
 Avec :
 \begin{itemize}
-    \item $\underline{\theta}$ : \textbf{paramètre décisionnel} \newline
-    \item $\underline{y}$ : \textbf{vecteur d'observation} \newline
-    \item $(\theta_{i})_{i \in \mathbb{N}}$, $(y_{i})_{i \in \mathbb{N}}$ : \textbf{variables aléatoires} de $G$ et $F$ \newline
-    \item $(G,\mathcal{G})$ et $(F,\mathcal{F})$ sont des espaces probabilisables \newline
+    \item $\underline{x}$ : \textbf{paramètre décisionnel} (aussi noté $\underline{\theta}$) : c'est le paramètre sur lequel est pris la décision. Il est peut être déterministe ou aléatoire. \newline
+    \item $\underline{y}$ : \textbf{vecteur d'observation}. $(\Omega, \epsilon, P)$ est un espace probabilisé qui modélise l'expérience aléatoire permettant d'observer les signaux aléatoires rencontrés (i.e. $\underline{x}$). Par conséquent, $\underline{y} : \Omega \longrightarrow F$, soit $\underline{y} \in \mathcal{M}(\Omega, F)$ \footnote{i. e. $\underline{y}$ est une \textbf{VA} $\Longleftrightarrow \underline{y}$ est une fonction qui à tout évènement $\omega \in \Omega$ associe une valeur $y_{i} \in F$} \newline
+    \item $(x_{i})_{i \in \mathbb{N}}$ et $(y_{i})_{i \in \mathbb{N}}$ : \textbf{variables aléatoires} de $\underline{x}$ et de $\underline{y}$ \newline
+    \item $(G,\mathcal{G})$ et $(F,\mathcal{F})$ sont des espaces probabilisables. $F$ est \textbf{l'espace des observations} et $G$ \textbf{l'esapce des paramètres} \newline
 \end{itemize}
-\noindent \textbf{Estimateur} \newline
+\subsection{Estimateur}
 \noindent Pour un \textbf{estimateur $\widehat{\theta}$}, le meilleur estimateur (ou filtre) de $\theta$ est donc l'application $\widehat{\theta}$:
 \begin{equation}
     \large
@@ -144,45 +154,124 @@ Avec :
      } \nonumber
     \normalsize
 \end{equation}
-Avec $\mathcal{M}(F,G)$ l'ensemble des applications de $F$ dans $G$. \newline
-
-\noindent \textbf{Densité de probabilité conditionnelle} \newline
+Avec $\mathcal{M}(F,G)$ l'ensemble des applications \textbf{mesurables} de $F$ dans $G$. \newline
+\newpage
+\subsection{Densité de probabilité conditionnelle - vraisemblance}
 \noindent $(\Omega, \epsilon, P)$ est un espace probabilisé qui modélise l'expérience aléatoire (signaux aléatoires rencontrés) \newline
-\noindent $\underline{y}$ est le vecteur d'observation qui admet une \textbf{densité} par rapport à $F$, de \textbf{mesure canonique}\footnote{Mesure canonique que l'on prend comme mesure de Lebesgue} $\nu$, tandis que $\widehat{\theta}(\underline{y})$ est une VA à valeurs dans $G$, alors la \textbf{densité de probabilité conditionnelle de $\underline{y}$ sachant $\theta$ } s'exprime sous la forme :
+\noindent $\underline{y}$ est le vecteur d'observation qui admet une \textbf{densité} par rapport à $F$, de \textbf{mesure canonique}\footnote{Mesure canonique que l'on prend comme mesure de Lebesgue. \newline On a, pour $\underline{y} \in \mathcal{M}(\Omega, F)$ de mesure $d\underline{v} = d\mu(\underline{v})$, que $\forall y_{i} \in F, \mu(y_{i}) = P(\underline{y}^{-1}(y_{i}))$. De même, on note $d\underline{u} = dv(\underline{u})$ pour la mesure de l'espace décisionnel $\mathcal{G}$}, tandis que $\widehat{\theta}(\underline{y})$ est une VA à valeurs dans $G$, alors la \textbf{densité de probabilité conditionnelle de $\underline{y}$ sachant $\theta$ } s'exprime sous la forme :
 \begin{equation}
     \large
     \tcbhighmath[fuzzy halo=0.5mm with electricultramarine!35!electricultramarine,arc=2pt,
     boxrule=0pt,frame hidden]{ 
-        f_{\underline{y}|\theta}(\underline{\nu}|\theta), \forall \nu \in F
+        f_{\underline{y}|\theta}(\underline{v}|\theta), \forall \underline{v} \in F
      } \nonumber
     \normalsize
 \end{equation}
-\textbf{Fonction de perte ou de coût} : application $L$ telle que :
+On supposera dans le cours que la vraisemblance est connue (i.e. la loi de la VA est connue)
+\subsection{Fonction de perte ou de coût}
+C'est une application $L$ telle que :
 \begin{equation}
-    L : G \times G \longrightarrow \mathbb{R}, (\theta_{1},\theta_{2}) \mapsto L[\theta_{1},\theta_{2}] \nonumber
+    \large
+    \tcbhighmath[fuzzy halo=0.5mm with electricultramarine!35!electricultramarine,arc=2pt,
+    boxrule=0pt,frame hidden]{ 
+        L : G \times G \longrightarrow \mathbb{R}, (\theta_{1},\theta_{2}) \mapsto L[\theta_{1},\theta_{2}] \nonumber
+     } \nonumber
+    \normalsize
 \end{equation}
-Pour un estimateur $\widehat{\theta}$ et $\nu \in F$ donnés,  $L[\widehat{\theta}(\underline{\nu}), \theta]$ représente le \textbf{coût de la décision} $\widehat{\theta}(\nu)$ quand la vraie valeur du paramètre décisionnel est $\theta$. Ce coût est généralement arbitraire. \newline
-\textbf{Fonction de risque}
+Pour un estimateur $\widehat{\theta}$ et $\underline{v} \in F$ donnés, $L[\widehat{\theta}(\underline{v}), \theta]$ représente le \textbf{coût de la décision} $\widehat{\theta}(\underline{v})$ quand la vraie valeur du paramètre décisionnel est $\theta$. Ce coût est généralement arbitraire. \newline
+\subsection{Fonction de risque}
+\noindent Fonction déterministe qui dépend de $\widehat{\theta}$ et $\theta$. C'est l'espérance de la perte entre la valeur du paramètre $\theta$ estimée et sa vraie valeur, sachant que $\theta$ vaut tant.
 \begin{equation}
-    \mathcal{R}(\widehat{\theta},\theta) = E[L(\widehat{\theta}(\underline{y}),\theta)|\theta] = \int_{F}{L[\widehat{\theta}(\underline{\nu}), \theta]f_{\underline{y}|\theta}(\underline{\nu}|\theta)}{d\underline{\nu}} \nonumber
+    \large
+    \tcbhighmath[fuzzy halo=0.5mm with electricultramarine!35!electricultramarine,arc=2pt,
+    boxrule=0pt,frame hidden]{ 
+        \mathcal{R}(\widehat{\theta},\theta) = E[L(\widehat{\theta}(\underline{y}),\theta)|\theta] = \int_{F}{L[\widehat{\theta}(\underline{v}), \theta]f_{\underline{y}|\theta}(\underline{v}|\theta)}{d\underline{v}} \nonumber
+     } \nonumber
+    \normalsize
 \end{equation}
-\newpage
-\subsection{Point de vu Bayésien et non Bayésien}
+Ici, l'objectif est de trouver une fonction $\widehat{\theta}$ qui minimise le risque, c'est-à-dire une fonction $\widehat{\theta}$ qui se rapproche le plus possible de sa vraie valeur.
+\section{Point de vu Bayésien et non Bayésien}
 \begin{itemize}
     \item \textbf{Non Bayésien} : $\theta$ est supposé déterministe, c'est à dire qu'il obéit à des lois non probabilistes \newline
-    \item \textbf{Bayésien} : $\theta$ est supposé aléatoire et de loi connue \newline
+    \item \textbf{Bayésien} : $\theta$ est supposé aléatoire et de loi connue \newpage
     \item \textbf{Paramétrique} : $\theta$ est aléatoire et de loi connue (i.e. Bayésien sans supposition) \newline
     \item \textbf{Non Paramétrique} : $\theta$ est aléatoire et de loi inconnue. \newline
 \end{itemize}
 \noindent Le point de vu \textbf{fréquentiste}, i.e. non paramétrique ne sera étudié dans le cadre de ce cours. Le point de vu Bayésien permet d'introduire d'autres notions telles que : \newline
-
-\noindent \textbf{Risque moyen} \newline
-\noindent pour une \textbf{densité de probabilité a fortiori $f_{\theta}(u)$} du paramètre décisionnel, le risque moyen s'exprime sous la forme :
+\subsection{Risque moyen - $\theta$ Bayésien}
+\noindent En adoptant le \textbf{point de vue Bayésien}, pour une \textbf{densité de probabilité a fortiori $f_{\theta}(u)$} du paramètre décisionnel, le risque moyen s'exprime sous la forme :
 \begin{equation}
-    \overline{R}(\widehat{\theta}) = E[R(\widehat{\theta}), \theta] = \int_{G}{R(\widehat{\theta},u)}f_{\theta}(u)du = \int_{F}{H_{c}(\underline{\nu})f_{y}(\underline{\nu})}d\underline{\nu}
+    \large
+    \tcbhighmath[fuzzy halo=0.5mm with electricultramarine!35!electricultramarine,arc=2pt,
+    boxrule=0pt,frame hidden]{ 
+        \overline{R}(\widehat{\theta}) = E[R(\widehat{\theta}), \theta] = \int_{G}{R(\widehat{\theta},u)}f_{\theta}(u)du = \int_{F}{H_{c}(\underline{v})f_{y}(\underline{v})}d\underline{v}
+     } \nonumber
+    \normalsize
 \end{equation}
 Avec
 \begin{equation}
-    H_{c}(\underline{\nu}) =  \int_{G}{L[\widehat{\theta}(\underline{\nu}), u]f_{\theta | y}(u|\underline{\nu})}du = E\{L[\widehat{\theta}(\underline{y}),\theta]|\underline{y}=\underline{\nu}\}
+    \large
+    \tcbhighmath[fuzzy halo=0.5mm with electricultramarine!35!electricultramarine,arc=2pt,
+    boxrule=0pt,frame hidden]{ 
+        H_{c}(\underline{v}) =  \int_{G}{L[\widehat{\theta}(\underline{v}), u]f_{\theta | y}(u|\underline{v})}du = E\{L[\widehat{\theta}(\underline{y}),\theta]|\underline{y}=\underline{v}\}
+    } \nonumber
+    \normalsize
 \end{equation}
-La ddp conditionnelle $f_{\theta | y}(u|\underline{\nu})$ devient la \textbf{densité de probabilité a posteriori} et la loi de $\underline{y}$ est \textbf{l'evidence}
+La ddp conditionnelle $f_{\theta | y}(u|\underline{v})$ devient la \textbf{densité de probabilité a posteriori} et la loi de $\underline{y}$ est \textbf{l'evidence}.
+Le but est ici de trouver le $\underline{v} \in F$ qui minimise $H(\underline{v})$ \newline
+
+\noindent \textbf{Exemple - coût quadratique} \newline
+\noindent Supposons $G = \mathbb{R}, L[\widehat{\theta}, \theta] = (\widehat{\theta} - \theta)^{2}$. Pour $\underline{v} \in F$, calculer le risque conditionnel :
+\begin{align}
+    H(\underline{v}) &= E[(\widehat{\theta} - \theta)^{2}|\underline{y} = \underline{v}] \nonumber \\
+                     &= \widehat{\theta}^{2}(\underline{v}) - 2\widehat{\theta}(\underline{v})E[\theta | \underline{y} = \underline{v}] + E[\theta^{2} | \underline{y} = \underline{v}] \nonumber \\
+                     &= (\widehat{\theta}(\underline{v}) - E[\theta | \underline{y} = \underline{v}])^{2} + E[(\theta - E[\theta | \underline{y}])^{2} | \underline{y} = \underline{v}] \nonumber
+\end{align}
+On obtient une équation quadraitque en $\widehat{\theta}(\underline{y})$ à résoudre. Le minimum de $H$ est atteint en 
+\begin{equation}
+    \widehat{\theta}(\underline{v}) = E[\theta | \underline{y} = \underline{v}] = \int_{G}{u f_{\theta | \underline{y}}(u | \underline{v}du)} \nonumber
+\end{equation}
+\subsection{Risque moyen - $\theta$ non Bayésien}
+D'un \textbf{point de vue non Bayésien}, on utilise plutôt le maximum de vraisemblance : 
+\Large
+\begin{equation}
+    \widehat{\theta}(\underline{y}) = arg (max f_{\underline{y} | \theta}(\underline{v}| \theta)) \nonumber
+\end{equation}
+\normalsize
+En effet, pour $\theta$ déterministe, on définit :
+\begin{itemize}
+    \item \textbf{Le biais} : $B(\widehat{\theta}) = E[\widehat{\theta}] - \widehat{\theta}$
+    \item \textbf{La variance} : $V(\widehat{\theta}) = E[\widehat{\theta}^{2}] - E[\widehat{\theta}]^{2}$
+\end{itemize}
+\newpage
+\section{Estimation en moyenne quadratique (EMQ)}
+
+\newpage
+\section{Estimation linéaire en moyenne quadratique (ELMQ)}
+\noindent D'un point de vue Bayésien, on prend un coût quadratique et on suppose $\underline{x}, \underline{y} \in L^{2}(P) \times L^{2}(P)^{n}$ avec :
+\[
+\underline{y} = 
+\begin{bmatrix}
+    y_{1} & ... & y_{n}    
+\end{bmatrix}
+^{H}\] \footnote{$H$ est ici l'opérateur transpose définit sur $H_{L}$, le sous-espace des observations filtrées avec contrainte, qui sera définit juste après.}. Le problème est de trouver l'estimateur $a^{H} : \mathbb{C}^{n} \longrightarrow \mathbb{C}$ tel que : 
+\begin{equation}
+    \widehat{x}_{L} = a^{H}\underline{y} \nonumber
+\end{equation} 
+soit la meilleure estimation de $\underline{x}$ et $a^{H}$ désigne la transposée de la matrice $a$ dans le \textbf{sous-espace des observations filtrées avec contraintes linéaires} $H_{L}[\underline{y}]$ tel que : 
+\begin{equation}
+    \large
+    \tcbhighmath[fuzzy halo=0.5mm with electricultramarine!35!electricultramarine,arc=2pt,
+    boxrule=0pt,frame hidden]{ 
+        H_{L}[\underline{y}] := \{z \in L^{2}(P), \exists \underline{\omega} \in \mathbb{C}^{n}, z = \underline{\omega}^{H}\underline{y}\}
+    } \nonumber
+    \normalsize
+\end{equation}
+$\widehat{x_{L}} \in H_{L}[\underline{y}]$ est l'élément qui minimise la distance à $\underline{x}$.
+
+\newpage
+\section{Estimation affine en moyenne quadratique}
+
+\section{Estimations en moyenne quadratique avec contraintes linéaires}
+
+\section{Estimation non-Bayésienne}

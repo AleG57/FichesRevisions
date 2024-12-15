@@ -6,6 +6,19 @@
 \contentsline {subsection}{\numberline {1.1.3}Précisions}{5}{subsection.1.1.3}%
 \contentsline {subsection}{\numberline {1.1.4}Probabilités}{6}{subsection.1.1.4}%
 \contentsline {subsection}{\numberline {1.1.5}Schématiquement}{6}{subsection.1.1.5}%
-\contentsline {section}{\numberline {1.2}Estimation}{7}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Notions et définitions de base}{7}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Point de vu Bayésien et non Bayésien}{8}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.2}Transformée de Fourrier continue}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Transformée de Fourrier discrète}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Estimation}{8}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Notions et définitions de base}{8}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Estimateur}{8}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Densité de probabilité conditionnelle - vraisemblance}{9}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Fonction de perte ou de coût}{9}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Fonction de risque}{9}{subsection.1.4.5}%
+\contentsline {section}{\numberline {1.5}Point de vu Bayésien et non Bayésien}{9}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Risque moyen - $\theta $ Bayésien}{10}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Risque moyen - $\theta $ non Bayésien}{10}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.6}Estimation en moyenne quadratique (EMQ)}{11}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Estimation linéaire en moyenne quadratique (ELMQ)}{12}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Estimation affine en moyenne quadratique}{13}{section.1.8}%
+\contentsline {section}{\numberline {1.9}Estimations en moyenne quadratique avec contraintes linéaires}{13}{section.1.9}%
+\contentsline {section}{\numberline {1.10}Estimation non-Bayésienne}{13}{section.1.10}%
