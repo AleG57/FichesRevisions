@@ -1,0 +1,100 @@
+\chapter*{Notations}
+
+\begin{itemize}
+    \item $\mathcal{X}$ désigne l'ensemble des entrées (observations). $\mathcal{X}^m$ est l'ensemble des $m$-uplets $(x_1, \dots, x_m)$
+    dont chaque terme est un élément de $\mathcal{X}$, on pose $\mathcal{X}^{*} = \bigcup_{m=1}^{+\infty} \mathcal{X}^{m}$ \newline
+    \item $|\mathcal{X}|$ désigne le cardinal de $\mathcal{X}$ \newline 
+    \item $\mathcal{Y}$ désigne l'espace des sorties \newline
+    \item $L$ désigne la fonction de coût \newline
+    \item $m(\mathcal{X}, \mathcal{Y})$ est l'ensemble des fonctions mesurables \footnote{
+        ($\mathcal{X}, m_{\mathcal{X}}$) et ($\mathcal{Y}, m_{\mathcal{Y}}$ sont des espaces mesurables)
+    } \newline
+    \item ($\Omega, \mathcal{E}, \mathbb{P}$) désigne un espace  \newline
+    \item $\mathbf{A}$ désigne une matrice. \newline
+    \item $\mathcal{M}_n,p(\mathbb{K})$ désigne l'espace des matrices de $n$ lignes, $p$ colonnes à coefficients dans $\mathbb{R}$
+\end{itemize}
+
+\chapter*{Rappels}
+
+\noindent
+
+\chapter{Modèle formel de l'apprentissage statistique supervisé}
+\section{Définitions}
+
+\begin{itemize}
+
+\item \noindent Soient $\mathcal{X}, \mathcal{Y}$ donnés. La fonction de coût $L$ est définie par : 
+
+\[
+\begin{aligned}
+L : \mathcal{Y} \times \mathcal{Y} &\to \mathbb{R}^{+} \\
+(y,y') &\mapsto L(y,y')
+\end{aligned}
+\]
+
+\noindent C'est une fonction arbitraire. En général, on prend $L(y,y') = |y - y'|^2$ (méthode OLS) avec $y' = \hat{y} = h(x)$, 
+$h$ l'hypothèse que l'on fait sur $x \in \mathcal{X}$ pour estimer la valeur $y$ i.e. $\hat{y}$ est un estimateur de $y$. $L$ est donc le coût
+de décision de $h$ sur $x$. \newline
+
+\item $h \in \mathcal{H} \subset m(\mathcal{X}, \mathcal{Y})$ avec $\mathcal{H}$ l'ensemble des hypothèses faites sur $x$ pour estimer $y$. \newline
+
+\item $S = ((x,y_i))_{1 \leq i \leq m} = ((x_1,y_1), \dots, (x_m,y_m)) \in (\mathcal{X} \times \mathcal{Y})^{*}$  est une séquence d'objets labellisés.
+Les $x_i$ sont les données observées et les $y_i$ les valeurs à estimées. $S$ représente le jeu de données d'entraînement \newline
+
+\item Un Algorithme Automatique Supervisé (AAS) est une fonction tel que : 
+
+\[
+\begin{aligned}
+A : (\mathcal{X} \times \mathcal{Y})^{*} &\to \mathcal{H} \\
+S &\mapsto A(S) = h_s
+\end{aligned}
+\]
+
+\item Risque réel :
+
+\begin{align}
+    \mathcal{R}(h) &= \mathbb{E}[L(y,y')] \\
+                   &= \int_{\mathcal{X} \times \mathcal{Y}} L(y, h(x))p(x,y)dxdy \nonumber\\
+                   &= \int_{\mathcal{X} \times \mathcal{Y}} L(y, h(x))p(y | x)p(x)dxdy \nonumber
+\end{align}
+
+
+\item Risque empirique :
+
+\begin{equation}
+    \mathcal{R}_s(h) = \hat{\mathcal{R}}(h) = \frac{1}{m} \sum_{i=1}^{m} L(h(x_i), y_i)
+\end{equation}
+
+
+\newpage
+
+\noindent C'est le seul risque dont on a accès (quantité d'information disponible limitée et finie). On cherche à minimiser 
+le risque réel $\mathcal{R}$ à l'aide de la décision prise parmis $\mathcal{H}, h_s = A(S)$, à savoir :
+
+\begin{equation}
+    \mathcal{R}(h_s) = \min_{h \in \mathcal{H}}\mathcal{R}(h) \Longleftrightarrow 
+    (\text{ERM})_{\mathcal{H}}  = h_s \in \text{arg}\min_{h \in \mathcal{H}} \mathcal{R}_s(h)
+\end{equation}
+
+\noindent \textbf{Propriété :} $h \in \mathcal{H}, \mathcal{R}_s(h) \xrightarrow[m \to \infty]{p.s.} \mathcal{R}(h)$ et en moyenne quadratique. 
+\footnote{Attention : $\mathcal{R}(h_s)$ est une VA fonction de $S$, on ne peut pas appliquer la loi des grands nombres.}
+
+\end{itemize}
+
+\section{Capacité d'apprentissage PAC}
+
+\noindent Soient $\mathcal{X}, \mathcal{Y}, L, \mathcal{H}$ fixés. $\mathcal{H}$ a la capacité PAC 
+ \footnote{Probablement Approximativement Correct} quand : \newline
+
+\noindent $\exists A, \exists m_{\mathcal{H}} : ]0;1[^{2} \to \mathbb{N}, \forall P, \forall (\epsilon, \delta) \in  ]0;1[^{2}, 
+\forall m \le m_{\mathcal{H}}(\epsilon, \delta), \forall S = ((x,y_i))_{1 \leq i \leq m} = ((x_1,y_1), \dots, (x_m,y_m)),$
+
+\begin{equation}
+    P(\mathcal{R}(A)(S) - \min_{h \in \mathcal{H}}\mathcal{R}(h) \leq \epsilon) \geq 1 - \delta \quad (*) \nonumber
+\end{equation}
+
+\noindent De même :
+
+\begin{equation}
+    m_{\mathcal{H}}(\epsilon, \delta) = \min \{m \in \mathbb{N} \text{tel que} \forall P, \forall S, (*) \text{est vérifiée}\}
+\end{equation}

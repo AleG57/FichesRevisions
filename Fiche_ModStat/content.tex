@@ -1,0 +1,26 @@
+\chapter{Mixture models}
+
+\section{Un modèle génératif}
+
+\noindent Un modèle de mixture est un modèle génératif tel que :
+
+\begin{equation}
+    p(X | \theta) = \sum_{c=1}^K p(X | \theta_{X | z})P(Z = z | \theta_z)
+\end{equation}
+
+Avec : \newline
+
+\begin{itemize}
+    \item $X$ : variables observées (\textit{dataset}) définit par $p(X | Z = z) = p(X | \theta_{X | z})$ et paramétrés par $\theta_{X | z} = (\theta_z)_{1 z K}$ \\
+    \item $Z$ : variable latente catégorielle avec $K$ classes estimée par les paramètres $\theta_z = (p_1, \dots, p_K)$ avec $p_z = P(Z à z)$. $K$ représente donc le nombre de clusters. \\
+    \item $\theta$ les variables du modèle. \\
+    \item $p(X | \theta)$ distribution du modèle que l'on cherche à modéliser. \\
+    \item $p(X | Z = z)$ : distribution du $z$-ième cluster. \\
+\end{itemize}
+
+\noindent En effet, on considère la distribution du modèle comme étant complexe et on cherche à modéliser cette distribution à l'aide 
+d'une combinaison linéaire de distributions simples. Cette somme de distributions est notée $p(X | \theta)$.
+
+\section{L'algorithme EM}
+
+\noindent Un tel estimateur de la distribution du modèle est résolu à l'aide de l'algorithme EM.

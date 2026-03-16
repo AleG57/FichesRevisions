@@ -1,0 +1,441 @@
+\documentclass[12pt,french]{report}
+
+% This is the main framework I use for my LateX documents.
+% main.tex by Alexis GRACIAS
+
+%%%%%%%%%%%%
+% PACKAGES %
+%%%%%%%%%%%%
+
+% TABLE OF CONTENT FOR CHAPTERS
+
+\usepackage{minitoc}
+\usepackage{minitoc}
+\mtcsettitle{minitoc}{Sommaire du chapitre} % Change le titre de la minitoc
+\mtcsetfont{minitoc}{section}{\normalsize\bfseries} % Style des sections dans la minitoc
+\mtcsetfont{minitoc}{subsection}{\small\itshape} % Style des sous-sections
+\mtcsetrules{minitoc}{off} % Désactive les lignes sous les titres de section
+\mtcsetoffset{minitoc}{10pt} % Ajoute un espacement autour de la minitoc
+
+\dominitoc % Active les mini-tables des matières
+% Personnalisation du titre des mini tables des matières
+\renewcommand{\mtctitle}{}
+
+
+% GEOMETRY
+
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+% LASTAPGE
+
+\usepackage{lastpage}
+
+% HEADERS AND FOOTERS
+\usepackage{fancyhdr}
+
+% LANGUAGE
+
+\usepackage{babel}
+
+% REFERENCES
+
+\usepackage{hyperref} % Add links to the table of content, files and website
+
+% GRAPHS
+
+\usepackage{tikz} % Graph package
+
+% IMAGES
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{tabto}
+
+% COLOR
+
+\usepackage[skins,theorems]{tcolorbox} % Frame color package
+\usepackage{amssymb}
+\usepackage[dvipsnames]{xcolor} % Text color package and more colors
+\usepackage{tcolorbox}
+
+% Custom colors
+\definecolor{ao}{rgb}{0.0, 0.0, 1.0}
+\definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
+\definecolor{cyan}{rgb}{0.0, 1.0, 1.0}
+\definecolor{glaucous}{rgb}{0.38, 0.51, 0.71}
+\definecolor{electricultramarine}{rgb}{0.25, 0.0, 1.0}
+
+% CAPTIONS
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[utf8]{inputenc}
+
+% STYLE
+
+% Chapter's title style
+\usepackage[T1]{fontenc}
+\usepackage{titlesec, blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+% Table of contents style
+\makeatletter
+\renewcommand*{\l@chapter}[2]{%         % Chapter label format
+  \ifnum \c@tocdepth > \m@ne            % Check: Maximum depth > -1
+    \addpenalty{-\@highpenalty}%        % Encourage prior line breaking
+    \vskip 1.0em \@plus\p@%             % Prior vertical whitespace
+    \setlength\@tempdima{1.5em}%        % Set temporary length
+    \begingroup                         % Begin closed group
+      \parindent\z@                     % No paragraph indentation
+      \rightskip\@tocrmarg              % Reserved right whitespace
+      \parfillskip -\@tocrmarg          % Prevent box from moving
+      \leavevmode                       % Force horizontal mode
+      \advance\leftskip\@tempdima       % Left whitespace
+      \hskip -\leftskip                 % First line alignment
+      {\bfseries #1}%           % Chapter name and format
+      \nobreak                          % Avoid lineskip
+      \leaders\hbox{$%                  % Command to replicate dots
+        \m@th                           % Math mode for alignment
+        \mkern\@dotsep mu               % Whitespace before a dot
+        \hbox{.}%                       % Dot separator
+        \mkern\@dotsep mu               % Whitespace after a dot
+      $}%
+      \hfill                            % Flush to the right
+      \nobreak\hb@xt@\@pnumwidth{%      % Chapter page’s number box
+        \hss #2%                        % Page number with buffer
+      }%
+      \par                              % Insert line skip
+      \penalty\@highpenalty             % Return to default penalty
+    \endgroup                           % End closed group
+  \fi
+}
+\makeatother
+
+
+% MATH
+
+\usepackage{amsmath,amsfonts,mathtools,stmaryrd} % Math libraries
+
+\usepackage{listings} % required for specific languages
+\lstset{ % Set listing package options
+    language=bash, % choose the language of the code
+    basicstyle=\fontfamily{pcr}\selectfont\footnotesize\color{red},
+    keywordstyle=\color{black}\bfseries, % style for keywords
+    numbers=none, % where to put the line-numbers
+    numberstyle=\tiny, % the size of the fonts that are used for the line-numbers     
+    backgroundcolor=\color{white},
+    showspaces=false, % show spaces adding particular underscores
+    showstringspaces=false, % underline spaces within strings
+    showtabs=false, % show tabs within strings adding particular underscores
+    frame=single, % adds a frame around the code
+    tabsize=2, % sets default tabsize to 2 spaces
+    rulesepcolor=\color{gray},
+    rulecolor=\color{black},
+    captionpos=b, % sets the caption-position to bottom
+    breaklines=true, % sets automatic line breaking
+    breakatwhitespace=false, 
+}
+
+% Tabular
+
+\usepackage{tabularx}
+\usepackage{ragged2e}
+
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X} 
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+% OTHER
+
+\usepackage{pdfpages}
+
+% SCRIPTS (python)
+
+% Load libraries
+\usepackage{tcolorbox}
+\tcbuselibrary{minted,breakable,xparse,skins}
+\usepackage{minted}
+\usepackage{xcolor}
+
+\definecolor{bg}{gray}{0.95}
+\DeclareTCBListing{mintedbox}{O{}m!O{}}{%
+  breakable=true,
+  listing engine=minted,
+  listing only,
+  minted language=#2,
+  minted style=default,
+  minted options={%
+    linenos,
+    gobble=0,
+    breaklines=true,
+    breakafter=,,
+    fontsize=\small,
+    numbersep=8pt,
+    #1},
+  boxsep=0pt,
+  left skip=0pt,
+  right skip=0pt,
+  left=25pt,
+  right=0pt,
+  top=3pt,
+  bottom=3pt,
+  arc=5pt,
+  leftrule=0pt,
+  rightrule=0pt,
+  bottomrule=2pt,
+  toprule=2pt,
+  colback=bg,
+  colframe=gray!70,
+  enhanced,
+  overlay={%
+    \begin{tcbclipinterior}
+    \fill[gray!20!white] (frame.south west) rectangle ([xshift=20pt]frame.north west);
+    \end{tcbclipinterior}},
+  #3}
+
+%\usepackage{eso-pic,lipsum}
+%\AddToShipoutPicture{%
+%	\AtTextCenter{%
+%		\fboxsep5mm \fboxrule=0.8pt
+%		\makebox(0,0)[c]{\fbox{\rule{0pt}\textheight\rule\textwidth{0pt}}}%
+%	}%
+%}
+
+%%%%%%%%%%%%
+% COMMANDS %
+%%%%%%%%%%%%
+
+\lstset{aboveskip=\baselineskip,belowskip=\baselineskip,basicstyle=\ttfamily} % Formating line break after bash commands
+
+% Get rid of 0. chapter's number
+\makeatletter 
+\renewcommand{\thesection}{%
+  \ifnum\c@chapter<1 \@arabic\c@section
+  \else \thechapter.\@arabic\c@section
+  \fi
+}
+\makeatother
+
+% Rules for \bar{x} and \overline{x} commands
+\makeatletter
+\newcommand*{\Xbar}{}%
+\DeclareRobustCommand*{\Xbar}{%
+  \mathpalette\@Xbar{}%
+}
+
+
+% THEOREMS
+
+\definecolor{electricultramarine}{rgb}{0.25, 0.0, 1.0}
+
+\tcbuselibrary{theorems} 
+\newtcbtheorem
+  []% init options
+  {Syntax}% name
+  {Syntax}% title
+  {%
+    colback=BrickRed!2,
+    colframe=BrickRed!35!BrickRed,
+    fonttitle=\bfseries,
+  }% options
+  {def}% prefix
+
+\tcbuselibrary{theorems} 
+\newtcbtheorem
+  []% init options
+  {Input}% name
+  {Input}% title
+  {%
+    colback=BlueViolet!5,
+    colframe=BlueViolet!35!BlueViolet,
+    fonttitle=\bfseries,
+  }% options
+  {def}% prefix
+
+\tcbuselibrary{theorems} 
+\newtcbtheorem
+  []% init options
+  {Output}% name
+  {Output}% title
+  {%
+    colback=Emerald!5,
+    colframe=Emerald!35!Emerald,
+    fonttitle=\bfseries,
+  }% options
+  {def}% prefix
+
+% FORMULAS
+
+\tcbset{highlight math style={enhanced,
+  colframe=red,colback=white,arc=0pt,boxrule=1pt}}
+
+% CUSTOM COMMANDS
+
+\newcommand*{\@Xbar}[2]{%
+  % #1: math style
+  % #2: unused (empty)
+  \sbox0{$#1\mathrm{X}\m@th$}%
+  \sbox2{$#1X\m@th$}%
+  \rlap{%
+    \hbox to\wd2{%
+      \hfill
+      $\overline{%
+        \vrule width 0pt height\ht0 %
+        \kern\wd0 %
+      }$%
+    }%
+  }%
+  \copy2 %
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DECLARE UNICODE CHARACTERS %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Main
+\DeclareUnicodeCharacter{2500}{\textendash}  % ─
+\DeclareUnicodeCharacter{2502}{\textbar}     % │
+\DeclareUnicodeCharacter{250C}{\textup{┌}}   % ┌
+\DeclareUnicodeCharacter{2510}{\textup{┐}}   % ┐
+\DeclareUnicodeCharacter{2514}{\textup{└}}   % └
+\DeclareUnicodeCharacter{2518}{\textup{┘}}   % ┘
+\DeclareUnicodeCharacter{251C}{\textup{├}}   % ├
+\DeclareUnicodeCharacter{2524}{\textup{┤}}   % ┤
+\DeclareUnicodeCharacter{252C}{\textup{┬}}   % ┬
+\DeclareUnicodeCharacter{2534}{\textup{┴}}   % ┴
+\DeclareUnicodeCharacter{253C}{\textup{┼}}   % ┼
+\DeclareUnicodeCharacter{2550}{\textup{═}}   % ═
+\DeclareUnicodeCharacter{2551}{\textup{║}}   % ║
+\DeclareUnicodeCharacter{2552}{\textup{╒}}   % ╒
+\DeclareUnicodeCharacter{2553}{\textup{╓}}   % ╓
+\DeclareUnicodeCharacter{2554}{\textup{╔}}   % ╔
+\DeclareUnicodeCharacter{2555}{\textup{╕}}   % ╕
+\DeclareUnicodeCharacter{2556}{\textup{╖}}   % ╖
+\DeclareUnicodeCharacter{2557}{\textup{╗}}   % ╗
+\DeclareUnicodeCharacter{2558}{\textup{╘}}   % ╘
+\DeclareUnicodeCharacter{2559}{\textup{╙}}   % ╙
+\DeclareUnicodeCharacter{255A}{\textup{╚}}   % ╚
+\DeclareUnicodeCharacter{255B}{\textup{╛}}   % ╛
+\DeclareUnicodeCharacter{255C}{\textup{╜}}   % ╜
+\DeclareUnicodeCharacter{255D}{\textup{╝}}   % ╝
+\DeclareUnicodeCharacter{2560}{\textup{╠}}   % ╠
+\DeclareUnicodeCharacter{2561}{\textup{╡}}   % ╡
+\DeclareUnicodeCharacter{2562}{\textup{╢}}   % ╢
+\DeclareUnicodeCharacter{2563}{\textup{╣}}   % ╣
+\DeclareUnicodeCharacter{2564}{\textup{╤}}   % ╤
+\DeclareUnicodeCharacter{2565}{\textup{╥}}   % ╥
+\DeclareUnicodeCharacter{2566}{\textup{╦}}   % ╦
+\DeclareUnicodeCharacter{2567}{\textup{╧}}   % ╧
+\DeclareUnicodeCharacter{2568}{\textup{╨}}   % ╨
+\DeclareUnicodeCharacter{2569}{\textup{╩}}   % ╩
+\DeclareUnicodeCharacter{256A}{\textup{╪}}   % ╪
+\DeclareUnicodeCharacter{256B}{\textup{╫}}   % ╫
+\DeclareUnicodeCharacter{256C}{\textup{╬}}   % ╬
+
+% Blocks and bars
+\DeclareUnicodeCharacter{2580}{\textup{▀}}   % ▀
+\DeclareUnicodeCharacter{2584}{\textup{▄}}   % ▄
+\DeclareUnicodeCharacter{2588}{\textup{█}}   % █
+\DeclareUnicodeCharacter{258C}{\textup{▌}}   % ▌
+\DeclareUnicodeCharacter{2590}{\textup{▐}}   % ▐
+\DeclareUnicodeCharacter{2591}{\textup{░}}   % ░
+\DeclareUnicodeCharacter{2592}{\textup{▒}}   % ▒
+\DeclareUnicodeCharacter{2593}{\textup{▓}}   % ▓
+\DeclareUnicodeCharacter{25A0}{\textup{■}}   % ■
+\DeclareUnicodeCharacter{25A1}{\textup{□}}   % □
+\DeclareUnicodeCharacter{25AA}{\textup{▪}}   % ▪
+\DeclareUnicodeCharacter{25AB}{\textup{▫}}   % ▫
+
+% Geometry
+\DeclareUnicodeCharacter{25B6}{\textup{▶}}   % ▶
+\DeclareUnicodeCharacter{25C0}{\textup{◁}}   % ◁
+\DeclareUnicodeCharacter{25FB}{\textup{▫}}   % ▫
+\DeclareUnicodeCharacter{25FD}{\textup{▽}}   % ▽
+\DeclareUnicodeCharacter{25FE}{\textup{▾}}   % ▾
+
+% Currency
+\DeclareUnicodeCharacter{20AC}{\textup{€}}   % €
+\DeclareUnicodeCharacter{00A3}{\textup{£}}   % £
+\DeclareUnicodeCharacter{20B9}{\textup{₹}}   % ₹
+
+% Arrows
+\DeclareUnicodeCharacter{2190}{\textup{←}}   % ←
+\DeclareUnicodeCharacter{2191}{\textup{↑}}   % ↑
+\DeclareUnicodeCharacter{2192}{\textup{→}}   % →
+\DeclareUnicodeCharacter{2193}{\textup{↓}}   % ↓
+\DeclareUnicodeCharacter{21D0}{\textup{⇐}}   % ⇐
+\DeclareUnicodeCharacter{21D1}{\textup{⇑}}   % ⇑
+\DeclareUnicodeCharacter{21D2}{\textup{⇒}}   % ⇒
+\DeclareUnicodeCharacter{21D3}{\textup{⇓}}   % ⇓
+
+% Miscellaneous
+\DeclareUnicodeCharacter{2605}{\textup{★}}   % ★
+\DeclareUnicodeCharacter{2606}{\textup{☆}}   % ☆
+\DeclareUnicodeCharacter{2610}{\textup{☐}}   % ☐
+\DeclareUnicodeCharacter{2611}{\textup{☑}}   % ☑
+\DeclareUnicodeCharacter{2612}{\textup{☒}}   % ☒
+\DeclareUnicodeCharacter{2620}{\textup{☠}}   % ☠
+\DeclareUnicodeCharacter{2622}{\textup{☢}}   % ☢
+\DeclareUnicodeCharacter{2623}{\textup{☣}}   % ☣
+\DeclareUnicodeCharacter{2626}{\textup{☦}}   % ☦
+\DeclareUnicodeCharacter{262A}{\textup{☪}}   % ☪
+\DeclareUnicodeCharacter{262F}{\textup{☯}}   % ☯
+\DeclareUnicodeCharacter{2660}{\textup{♠}}   % ♠
+\DeclareUnicodeCharacter{2665}{\textup{♥}}   % ♥
+\DeclareUnicodeCharacter{2666}{\textup{♦}}   % ♦
+\DeclareUnicodeCharacter{2663}{\textup{♣}}   % ♣
+
+%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENTS SETTINGS %
+%%%%%%%%%%%%%%%%%%%%%%
+
+% Fist page
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\title{
+    \HRule \\[0.4cm] \Huge \bfseries 
+    Fiche révision Apprentissage Statistique
+    \\[0.15cm] \HRule \\[0.4cm]}
+\author{\Large Alexis GRACIAS}
+
+
+% Document
+\begin{document}
+
+
+\maketitle
+
+\dominitoc % Initialization
+\large \tableofcontents
+\normalsize % Text size
+
+% Headers and footers
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+\pagestyle{fancy}
+%... then configure it.
+\fancyhead{} % clear all header fields
+\fancyhead[RO,LE]{\leftmark}
+\fancyhead[LO,LE]{A. GRACIAS}
+\fancyfoot{} % clear all footer fields
+
+% Page number
+\makeatletter
+\renewcommand{\@evenfoot}{\makebox[\textwidth][c]{page {\thepage} sur \pageref{LastPage}}}
+\renewcommand{\@oddfoot}{\@evenfoot}
+\makeatother
+
+% ITEMIZE (lists)
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{---}
+\renewcommand{\labelitemiii}{-}
+\renewcommand{\labelitemiv}{.}
+
+%%%%%%%%%%%
+% INCLUDE %
+%%%%%%%%%%%
+
+\include{content}
+
+
+\end{document}\input{main}
