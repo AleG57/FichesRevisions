@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.12)  16 MAR 2026 21:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.12)  19 MAR 2026 15:06
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
@@ -1075,7 +1075,7 @@ Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 77.
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
@@ -1204,7 +1204,7 @@ LaTeX Info: Redefining \Xbar on input line 222.
    defining Unicode char U+2666 (decimal 9830)
    defining Unicode char U+2663 (decimal 9827)
 
-(./main.aux (./content.aux))
+(./main.aux (./content.aux) (./domo.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 404.
@@ -1399,37 +1399,42 @@ l.438 \include{content}
 \openout2 = `content.aux'.
 
  (./content.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--12
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
@@ -1445,17 +1450,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 ]
 Chapitre 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--38
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
 
  []
 
@@ -1464,25 +1469,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
+Underfull \hbox (badness 10000) in paragraph at lines 127--131
 
  []
 
 
-Overfull \hbox (18.11761pt too wide) in paragraph at lines 89--91
-$\OMS/cmsy/m/n/12 9\OML/cmm/m/it/12 A; \OMS/cmsy/m/n/12 9\OML/cmm/m/it/12 m[] \
-OT1/cmr/m/n/12 :]0; 1[[]\OMS/cmsy/m/n/12 ! \U/msb/m/n/12 N\OML/cmm/m/it/12 ; \O
-MS/cmsy/m/n/12 8\OML/cmm/m/it/12 P; \OMS/cmsy/m/n/12 8\OT1/cmr/m/n/12 (\OML/cmm
-/m/it/12 ^^O; ^^N\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 2\OT1/cmr/m/n/12 ]0; 1[[]\O
-ML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 8\OML/cmm/m/it/12 m \OMS/cmsy/m/n/12 ^^T \OML
-/cmm/m/it/12 m[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^O; ^^N\OT1/cmr/m/n/12 )\OML
-/cmm/m/it/12 ; \OMS/cmsy/m/n/12 8\OML/cmm/m/it/12 S \OT1/cmr/m/n/12 = ((\OML/cm
-m/m/it/12 x; y[]\OT1/cmr/m/n/12 ))[] = ((\OML/cmm/m/it/12 x[]; y[]\OT1/cmr/m/n/
-12 )\OML/cmm/m/it/12 ; [] ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; y[]\OT1/cmr/
-m/n/12 ))\OML/cmm/m/it/12 ;$ 
- []
-
-)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1496,13 +1487,31 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.1.4}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.438 \include{content}
-                       ]
+l.154 \newpage
+              
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.6}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.154 \newpage
+              ])
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6]
+\openout2 = `domo.aux'.
+
+
+No file domo.tex.
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
 \openout3 = `main.maf'.
-
 
 
 Package minitoc(hints) Warning: W0078
@@ -1533,53 +1542,60 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6
+[7
+
+
+
 
 
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20260316215201 FAD58DE7366495DB465
-0CFEFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted cleantemp  --timestamp 20260319150655 FAD58DE7366495DB465
+0CFEFAC2FCD61)...executed.
 
-(./main.aux (./content.aux))
+(./main.aux (./content.aux) (./domo.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7EF63E83CDB6D3626D2FE619DD4390E3;649.
+(rerunfilecheck)             Checksum: 782B653240426B47AC0FC03699309105;1141.
  ) 
 Here is how much of TeX's memory you used:
- 38529 strings out of 473197
- 772614 string characters out of 5718605
- 1322304 words of memory out of 5000000
- 61151 multiletter control sequences out of 15000+600000
- 579248 words of font info for 93 fonts, out of 8000000 for 9000
+ 38564 strings out of 473197
+ 773216 string characters out of 5718605
+ 1325304 words of memory out of 5000000
+ 61173 multiletter control sequences out of 15000+600000
+ 579932 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,12n,107p,542b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fo
-nts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on main.pdf (7 pages, 249723 bytes).
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfti1200.pfb>
+Output written on main.pdf (8 pages, 299792 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 228 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
