@@ -26,13 +26,17 @@
     Il vient :
     \begin{equation}
         S = ((x_i, y_i)_{i \in \{1;m\}}) \in (\mathcal{X} \times \mathcal{Y})^{*} \nonumber
-    \end{equation} \newline
+    \end{equation}
     \item $L$ désigne la fonction de coût \newline
     \item $m(\mathcal{X}, \mathcal{Y})$ est l'ensemble des fonctions mesurables \footnote{
         ($\mathcal{X}, m_{\mathcal{X}}$) et ($\mathcal{Y}, m_{\mathcal{Y}}$) sont des espaces mesurables
     } \newline
     \item $m_{\mathcal{H}}(\epsilon, \delta)$ est la fonction de complexité d'échantilon. \newline
-    \item $(ERM)_S$ est l'hypothèse qui minimise le risque empirique sur $S$.
+    \item $(ERM)_S$ est l'hypothèse qui minimise le risque empirique sur $S$, i.e., 
+    \begin{equation}
+        (ERM)_{\mathcal{H}}(S) = A(S) = h_S = \text{arg} \min_{h \in \mathcal{H}} \mathcal{R}_S(h) \nonumber
+    \end{equation}
+    C'est la meilleure hypothèse pour le \textit{dataset} $S$. \newline 
     \item ($\Omega, \mathcal{E}, \mathbb{P}$) désigne un espace probabilisé \newline
     \item $\mathbf{A}$ désigne une matrice. \newline
     \item $\mathcal{M}_{n,p}(\mathbb{K})$ désigne l'espace des matrices de $n$ lignes, $p$ colonnes à coefficients dans $\mathbb{R}$
@@ -126,7 +130,7 @@ quand $\exists A, \exists m_{\mathcal{H}} : ]0;1[^{2} \to \mathbb{N}, \forall P,
 
 \noindent $m_{\mathcal{H}}(\epsilon, \delta)$ est la taille minimale du \textit{dataset} qui permet à l'algorithme d'apprendre correctement. C'est
 la fonction de complexité de $\mathcal{H}$ en mémoire ou en échantilon (données). Plus $\mathcal{H}$ est complexe, plus il faut de données. De même, plus $\epsilon, \delta$ sont petits,
-plus il faut de données. Cela veut dire que l'algorithme retourne un bon modè-le avec une grande probabilité. En général, pour une classe de VC-dimension $d$, on prend 
+plus il faut de données. Si $\epsilon$ et $\delta$ sont petits, cela veut dire que l'algorithme retourne un bon modèle avec une grande probabilité. En général, pour une classe de VC-dimension $d$, on prend 
 $m_{\mathcal{H}}(\epsilon, \delta) \approx \frac{d + log(\frac{1}{\delta})}{\epsilon}$\newline
 
 \noindent \textbf{Propriété :} Soit $\epsilon > 0$, $S$ est \textbf{$\epsilon$-représentatif} si et seulement si pour $h_s = (ERM)_{\mathcal{H}}(S)$,
@@ -153,13 +157,73 @@ $m_{\mathcal{H}}(\epsilon, \delta) \approx \frac{d + log(\frac{1}{\delta})}{\eps
 
 \newpage
 
-\section{Capacité d'apprentissage PAC pour des ensemble finis}
+\section{Capacité d'apprentissage PAC pour des ensemble finis ($|\mathcal{H}\ < \infty$)}
 
 \noindent \textbf{Lemme d'Hoeffding (1962)} : pour $(X_i)_{1 \geq i \geq m}$ VA i.i.d., $\mathbb{E}[X_i] = \mu, \exists a < b, a,b \in, \mathbb{R}$
 tel que $P(X_i \in [a;b]) = 1$, alors, $\forall \epsilon > 0$,
 
-\begin{equation}
+\begin{equation} 
     P(| \frac{1}{m}\sum_{i=1}^{m}X_i - \mu|) \leq 2e^{ \frac{-2m\epsilon^2}{(b-a)^2}}
 \end{equation}
 
-\noindent On appelle cette inégalité l'inégalité de concentration.
+\noindent On appelle cette inégalité inégalité de concentration. D'après Hoeffding, on a que $\mathcal{H}$ a la propriété de CU SSI:
+
+\begin{equation}
+    m_{\mathcal{H}}^{CU}(\epsilon, \delta) \leq 
+    \left\lceil \frac{\log\left(\frac{2|\mathcal{H}|}{\delta}\right)}{2\epsilon^2} \right\rceil
+\end{equation}
+
+\noindent et donc $\mathcal{H}$ a la capacité PAC avec $m_{\mathcal{H}}(\epsilon, \delta) \geq \left\lceil \frac{2\log(\frac{2|\mathcal{H}|}{\delta})}{\epsilon^2} \right\rceil$
+
+\section{Dilemme biais / complexité (\textit{underfitting vs. overfitting})}
+
+\noindent Pour certains algorithmes comme les $K$ plus proches voisins, la complexité devient énorme, ce qui nous pousse à trouver un équilibre entre la 
+quantité de données disponibles et la performance du modèle.
+
+\begin{equation}
+    \mathcal{R}(h_S) = \underbrace{\mathcal{R}(h_S) - \min_{h \in \mathcal{H}} \mathcal{R}(h)}_{\epsilon \text{ d'estimation}} +  \underbrace{\min_{h \in \mathcal{H}} \mathcal{R}(h)}_{\epsilon \text{ approx.}}
+\end{equation}
+
+\[
+\phantom{\mathcal{R}(h_S) =}
+\quad \downarrow \hspace{3cm} \downarrow
+\]
+
+\[
+\phantom{\mathcal{R}(h_S) =}
+\quad \text{variance} \hspace{2cm} \text{biais}
+\]
+
+\begin{itemize}
+    \item Si $|\mathcal{H}|$ est trop petit, l'espace des hypothèses n'est pas assez complexe pour trouver une hypothèse qui apprend bien les données (\textit{underfitting}). 
+    Dans ce cas, le \textbf{biais} $\searrow$ \textbf{et la variance} $\nearrow$ \newline
+    \item Si $|\mathcal{H}|$ est trop grand, l'espace des hypothèses est très complexe et peut coller parfaitement aux données ($\mathcal{R}_S(h) \rightarrow 0$) mais généralise mal (\textit{overfitting}). 
+    Il a aussi besoin de plus de données. Dans ce cas, le \textbf{biais} $\nearrow$ \textbf{et la variance} $\searrow$  
+\end{itemize}
+
+\newpage 
+
+\section{Il n'existe pas d'aprocimateur universel}
+
+\noindent \textbf{Lemme 1 :} Soit $m \in \mathbb{N}^{*}$, si $|\mathcal{X}| \leq 2m$ et $\mathcal{H} \in \mathcal{M}(\mathcal{X}, \mathcal{Y})$,
+alors $\forall A \in \mathcal{H}$ AAS, $\exists \mathbb{P}$ sur $\mathcal{X} \times \mathcal{Y}$ tel que : 
+
+\begin{equation}
+    \exists f \in \mathcal{H}, \quad \mathcal{R}(f) = 0 \nonumber
+\end{equation}
+
+\begin{equation}
+    \forall S \in (\mathcal{X} \times \mathcal{Y})^* i.i.d., \quad \mathbb{E}[\mathcal{R}(S)] \geq \frac{1}{4} \nonumber
+\end{equation}
+
+\noindent \textbf{No free lunch theorem : } Avec les hypothèses du lemme précédent et $\forall A \in \mathcal{H}$ AAS, $\exists \mathbb{P}$ sur $\mathcal{X} \times \mathcal{Y}$
+
+\begin{equation}
+    \exists f \in \mathcal{H}, \quad \mathcal{R}(f) = 0 \nonumber
+\end{equation}
+
+\begin{equation}
+    \forall S \in (\mathcal{X} \times \mathcal{Y})^* i.i.d., \quad \mathbb{P}(\mathcal{R}[A(S)] \geq \frac{1}{8}) \geq \frac{1}{7} \nonumber
+\end{equation}
+
+\section{Dimension VC (Vapnik-Chervonenkis)}
