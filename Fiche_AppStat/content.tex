@@ -47,7 +47,7 @@
 \noindent
 
 \chapter{Modèle formel de l'apprentissage statistique supervisé}
-\section{Définitions}
+\section{Définitions générales}
 
 \begin{itemize}
 
@@ -101,7 +101,7 @@ le risque réel $\mathcal{R}$ à l'aide de la décision prise parmis $\mathcal{H
 
 \begin{equation}
     \mathcal{R}(h_s) = \min_{h \in \mathcal{H}}\mathcal{R}(h) \Longleftrightarrow 
-    (\text{ERM})_{\mathcal{H}}  = h_s \in \text{arg}\min_{h \in \mathcal{H}} \mathcal{R}_s(h)
+    (\text{ERM})_{\mathcal{H}}  = A(S) = h_s = \text{arg}\min_{h \in \mathcal{H}} \mathcal{R}_s(h)
 \end{equation}
 
 \noindent \textbf{Propriété :} $h \in \mathcal{H}, \mathcal{R}_s(h) \xrightarrow[m \to \infty]{p.s.} \mathcal{R}(h)$ et en moyenne quadratique. 
@@ -110,6 +110,7 @@ le risque réel $\mathcal{R}$ à l'aide de la décision prise parmis $\mathcal{H
 \end{itemize}
 
 \section{Capacité d'apprentissage PAC}
+\subsection{Définition}
 
 \noindent Soient $\mathcal{X}, \mathcal{Y}, L, \mathcal{H}$ fixés. $\mathcal{H}$ a la capacité PAC 
  \footnote{Probablement Approximativement Correct. Probablement car la probabilité de l'évènement est non négligeable ($\geq 1 - \delta$),
@@ -118,8 +119,7 @@ quand $\exists A, \exists m_{\mathcal{H}} : ]0;1[^{2} \to \mathbb{N}, \forall P,
 \forall m \ge m_{\mathcal{H}}(\epsilon, \delta), \forall S$
 
 \begin{equation}
-    P(\mathcal{R}(A(S)) - \min_{h \in \mathcal{H}}\mathcal{R}(h) \leq \epsilon) \geq 1 - \delta 
-    \Longleftrightarrow P(\mathcal{R}(h_S) - \min_{h \in \mathcal{H}}\mathcal{R}(h) \leq \epsilon) \geq 1 - \delta \quad (*) \nonumber
+    P(\mathcal{R}(h_S) - \min_{h \in \mathcal{H}}\mathcal{R}(h) \leq \epsilon) \geq 1 - \delta \quad (*) \nonumber
 \end{equation}
 
 \noindent De même :
@@ -139,7 +139,9 @@ $m_{\mathcal{H}}(\epsilon, \delta) \approx \frac{d + log(\frac{1}{\delta})}{\eps
     \mathcal{R}(h_s) - \min_{h \in \mathcal{H}} \mathcal{R}(h) \leq \epsilon
 \end{equation}
 
-\section{Convergence uniforme}
+\newpage
+
+\subsection{Convergence uniforme}
 
 \noindent $\mathcal{H}$ a la propriété de convergence uniforme quand $\exists m_{\mathcal{H}}^{CU} \in ]0;1[^{2} \rightarrow \mathbb{N},
 \forall P, \forall (\epsilon, \delta) \in  ]0;1[^{2}, \forall m \geq m_{\mathcal{H}}^{CU}(\epsilon, \delta), \forall S,$
@@ -155,9 +157,7 @@ $m_{\mathcal{H}}(\epsilon, \delta) \approx \frac{d + log(\frac{1}{\delta})}{\eps
     m_{H}(\epsilon, \delta) \leq m_{H}^{CU}(\frac{\epsilon}{2}, \delta)
 \end{equation}
 
-\newpage
-
-\section{Capacité d'apprentissage PAC pour des ensemble finis ($|\mathcal{H}\ < \infty$)}
+\subsection{Capacité d'apprentissage PAC pour des ensemble finis ($|\mathcal{H}| < \infty$)}
 
 \noindent \textbf{Lemme d'Hoeffding (1962)} : pour $(X_i)_{1 \geq i \geq m}$ VA i.i.d., $\mathbb{E}[X_i] = \mu, \exists a < b, a,b \in, \mathbb{R}$
 tel que $P(X_i \in [a;b]) = 1$, alors, $\forall \epsilon > 0$,
@@ -173,9 +173,35 @@ tel que $P(X_i \in [a;b]) = 1$, alors, $\forall \epsilon > 0$,
     \left\lceil \frac{\log\left(\frac{2|\mathcal{H}|}{\delta}\right)}{2\epsilon^2} \right\rceil
 \end{equation}
 
-\noindent et donc $\mathcal{H}$ a la capacité PAC avec $m_{\mathcal{H}}(\epsilon, \delta) \geq \left\lceil \frac{2\log(\frac{2|\mathcal{H}|}{\delta})}{\epsilon^2} \right\rceil$
+\noindent et donc $\mathcal{H}$ a la capacité PAC avec 
+
+\begin{equation}
+    m_{\mathcal{H}}(\epsilon, \delta) \leq 
+    m_{\mathcal{H}}^{CU}(\frac{\epsilon}{2}, \delta) \leq
+    \left\lceil \frac{2\log(\frac{2|\mathcal{H}|}{\delta})}{\epsilon^2} \right\rceil
+\end{equation}
+
+\subsection{Capacité d'apprentissage PAC faible}
+
+\noindent $\mathcal{H}$ a la capacité d'apprentissage PAC faible quand $\exists A$ AAS, $\exists m_{\mathcal{H}} : ]0;1[^2 \leftarrow \mathbb{N},
+\forall (\epsilon, \delta) \in ]0;1[^2, \forall  m \geq m_{\mathcal{H}}(\epsilon, \delta), \forall P, \exists h \in \mathcal{H}$,
+
+\begin{itemize}
+
+    \item \begin{equation}
+        \mathcal{R}(h)= 0 
+    \end{equation}
+
+    \item \begin{equation}
+        P(\mathcal{R}(h_S) \geq \epsilon) \leq \delta 
+    \end{equation}
+
+\end{itemize}
+
+\noindent Naturellement, $\mathcal{H}$ n'as pas la CA PAC si $\mathcal{H}$ n'a pas la CA PAC faible
 
 \section{Dilemme biais / complexité (\textit{underfitting vs. overfitting})}
+\subsection{Définition}
 
 \noindent Pour certains algorithmes comme les $K$ plus proches voisins, la complexité devient énorme, ce qui nous pousse à trouver un équilibre entre la 
 quantité de données disponibles et la performance du modèle.
@@ -201,9 +227,7 @@ quantité de données disponibles et la performance du modèle.
     Il a aussi besoin de plus de données. Dans ce cas, le \textbf{biais} $\nearrow$ \textbf{et la variance} $\searrow$  
 \end{itemize}
 
-\newpage 
-
-\section{Il n'existe pas d'aprocimateur universel}
+\subsection{Il n'existe pas d'aprocimateur universel}
 
 \noindent \textbf{Lemme 1 :} Soit $m \in \mathbb{N}^{*}$, si $|\mathcal{X}| \leq 2m$ et $\mathcal{H} \in \mathcal{M}(\mathcal{X}, \mathcal{Y})$,
 alors $\forall A \in \mathcal{H}$ AAS, $\exists \mathbb{P}$ sur $\mathcal{X} \times \mathcal{Y}$ tel que : 
@@ -226,4 +250,80 @@ alors $\forall A \in \mathcal{H}$ AAS, $\exists \mathbb{P}$ sur $\mathcal{X} \ti
     \forall S \in (\mathcal{X} \times \mathcal{Y})^* i.i.d., \quad \mathbb{P}(\mathcal{R}[A(S)] \geq \frac{1}{8}) \geq \frac{1}{7} \nonumber
 \end{equation}
 
+\noindent Le \textit{no free lunch theorem} explique que même si il existe une hypothèse de telle sorte que le problème soit parfaitement aprenable, il est fort probable que
+le modèle appris ait un risque non négligeable. Sans hypothèses sur $\mathbb{P}$, l'apprentissage est peu fiable.
+
+\newpage
+
 \section{Dimension VC (Vapnik-Chervonenkis)}
+\subsection{Définitions}
+
+\begin{itemize}
+
+    \item On définit le \textbf{détecteur à seuil} comme étant la fonction $h_a$ tel que :
+
+    \[
+    \begin{aligned}
+        h_a : \mathbb{R} &\to \{ 0;1 \} \\
+        x &\mapsto h_a(x) = \mathbf{1}_{[a,+\infty)}(x) =
+                    \begin{cases}
+                    1 & \text{si } x \geq a \\
+                    0 & \text{si } x < a
+                    \end{cases}
+    \end{aligned}
+    \]
+
+    \begin{tikzpicture}
+        \draw[->] (-2,0) -- (3,0);
+        \draw[->] (0,-0.5) -- (0,1.5);
+        \draw[thick] (-2,0) -- (1,0);
+        \draw[thick] (1,1) -- (3,1);
+        \filldraw[fill=white] (1,0) circle (2pt);
+        \fill (1,1) circle (2pt);
+
+        \node[below] at (1,0) {$a$};
+    \end{tikzpicture}
+
+    \item Soit $\mathcal{C} \subset \mathcal{X}$, la restriction de $\mathcal{H}$ à $\mathcal{C}$, notée $\mathcal{H}_{\mathcal{C}}$ tel que 
+
+    \begin{equation}
+        \mathcal{H}_{\mathcal{C}} = \{ h/c : \mathcal{C} \rightarrow \mathcal{Y}, h \in \mathcal{H} \}
+    \end{equation}
+
+    \noindent Quand $\mathcal{C} = (c_1, \dots, c_m), m < +\infty$, on idnetifie la restriction $h/c$ d'une hypothèse $h$ au $m$-uplet $(h(c_1), \dots, h(c_m)) \in \mathcal{Y}^{m}$.
+    Autrement dit, \textbf{on regarde le comportement des hypothèses $h \in \mathcal{H}$ sur les points de $\mathcal{C} \subset \mathcal{X}$ uniquement} \newline
+
+    \item Un ensemble d'hypothèses $\mathcal{H} \subset \mathcal{M}(\mathcal{X}, \{0;1\})$ brise $\mathcal{C}$ quand $\mathcal{H}_{\mathcal{C}}$ est l'ensemble 
+    des fonctions de $\mathcal{C}$ dans $\{0;1\}$. i.e.
+
+    \begin{equation}
+        |\mathcal{H}_{\mathcal{C}}| = 2^{|\mathcal{C}|}
+    \end{equation}
+
+    \noindent Autrement dit, $\mathcal{H}$ \textbf{brise} $\mathcal{C}$ veut dire qu'il existe dans $\mathcal{H}$ une fonction $h$ qui est parfaitement capable de fitter les labels
+    de $\mathcal{Y}$ sur $\mathcal{C}$. Il vient que $\mathcal{R}_S(h) = 0$ et que pour $\mathcal{C} = (c_1, \dots, c_m), \forall y = (y_1, \dots, y_m) \in \mathcal{Y}^{m} = \{0;1\}^{m},
+    \exists h \in \mathcal{H}$ tel que 
+
+    \begin{equation}
+        y_i = h(x_i), \forall i \in \{1;m\}
+    \end{equation}
+
+\end{itemize}
+
+\noindent la dimension VC d'un ensemble d'hypothèses $\mathcal{H}$, notée $\mathrm{dimVC}(\mathcal{H})$ est la taille maximale d'un sous-ensemble
+$\mathcal{C} \subset \mathcal{X}$ qui peut être brisé par $\mathcal{H}$.
+
+\begin{equation}
+    \mathrm{dimVC}(\mathcal{H}) = \sup \{ |\mathcal{C}| \; : \; \mathcal{C} \subset \mathcal{X} \text{ est brisé par } \mathcal{H} \}.
+\end{equation}
+
+\noindent Si $\mathcal{H}$ est capable de briser un espace $\mathcal{C}$ de n'importe quelle taille, $\mathrm{dimVC}(\mathcal{H}) = +\infty$ \footnote{
+    on écrit sup au lieu de max dans la définition car en effet $\mathrm{VCdim}$ peut être infinie.
+}
+
+\noindent \textbf{Théorème : } Aucun ensemble d'hypothèses $\mathcal{H}$ de dimension VC infinie n'a la CA PAC faible ou CA PAC.
+
+\section{Théorème fondamental de l'apprentissage PAC}
+\subsection{Premier théorème de l'APAC}
+
+ 
